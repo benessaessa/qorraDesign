@@ -1,0 +1,52 @@
+header .navbar,header{
+    background-color: white;
+    color: black;
+}
+header .navbar-nav .nav-link,header .list-unstyled .nav-item:first-child .nav-link,header .list-unstyled .dropdown a{
+    color: rgba(13, 36, 54, 0.8);
+}
+.btn-login:hover{
+    background-color: white;
+    border-color: red;
+    color: red !important;
+}
+.btnLogin{
+    color: white;
+    background-color: #1473d3;
+}
+@media (max-width: 992px){
+    .navBrand{
+        margin-left: auto;
+    }
+    .navbar-collapse.collapse.show ul a ,.list-unstyled .nav-item:first-child .nav-link{
+        justify-content: center;
+        color: white !important;
+    }
+    .list-unstyled .nav-item:nth-child(2) .nav-link:hover{
+        color: #1473d3 !important;
+    }
+    .navbar-collapse.collapse.show .language .dropdown-menu a{
+        color: black !important;
+    }
+    .list-unstyled .nav-item:nth-child(3) .nav-link:hover{
+        background-color: white;
+        color: red !important;
+    }
+    .navbar-collapse.collapse.show ul{
+        margin-left: auto !important;
+        text-align: right;
+    }
+    .list-unstyled .nav-item .nav-link,.list-unstyled .nav-item:last-child,.list-unstyled .nav-item:nth-child(2){
+        /* margin-right: auto; */
+        text-align: right;
+    }
+    .nav-button #nav-icon3{
+        background-color: #000000;
+        left: 11px;
+    }
+    button.navbar-toggler {
+        z-index: 999;
+        position: absolute;
+        left: 11px;
+    }
+}

@@ -1,0 +1,51 @@
+.btn-navy:hover,.btnLogin:hover{
+    background-color: white;
+    border-color: #1473d3;
+}
+.loginSection{
+    /* padding: 1rem ; */
+    background-color:#f7f8fe;
+}
+.loginSection h1{
+    padding-top: 2.5rem;
+    padding-bottom: 0.4rem;
+    font-weight: 900;
+}
+.btnGoogle{
+    border: solid 1px #ede8e9;
+    color: #18191a;
+}
+.loginSection .card{
+    border-radius: 18px;
+    border: solid 1px #f2f2f2;
+}
+ .imgLogin{
+    min-height: 100vh;
+ } 
+.newCheckbox .custom-control-input {
+    border: 1px solid transparent;
+    text-align: right;
+}
+
+.newCheckbox .custom-control-input input {
+    float: right;
+}
+.input-group-text,.newInputGroup input{
+    border-radius: 0;
+}
+@media (max-width: 992px){
+    .imgLogin{
+        padding: 1rem;
+        min-height: unset;
+        width: 100%;
+        object-fit: cover;
+        max-height: 100vh;
+        border-radius: 5px;
+    }
+}
+@media screen and (min-width:1040px) and (max-width:1600px){
+    .imgLogin{
+        min-height: 125vh;
+        /* object-fit: cover; */
+    }
+}

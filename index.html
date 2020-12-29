@@ -1,0 +1,964 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/hover.min.css" />
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <link rel="stylesheet" href="assets/css/general.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/shap.css">
+
+
+
+
+</head>
+
+<body dir="rtl">
+  <header>
+    <div class="nav-container">
+      <nav class="navbar navbar-expand-lg p-0 container " id="top-nav">
+        <div class="navBrand">
+          <a class="navbar-brand" href="#">
+            <img src="assets/imgs/logo-white.png" alt="qorraa" width="122px" height="67px" />
+          </a>
+        </div>
+
+        <button class="nav-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="nav-icon3"><span></span><span></span><span></span><span></span></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav-menu " id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">كيف نعمل</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الاسئلة الشائعه</a>
+            </li>
+          </ul>
+          <ul class="d-flex list-unstyled mb-0">
+            <li class="nav-item">
+              <a class="nav-link btn  d-flex align-items-center" href="#">
+                <img src="assets/imgs/phone-icon.png" class="mx-2" width="32px" height="32px" />
+                201003453395+
+              </a>
+
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link btn btn-navy d-flex align-items-center" href="#">حساب جديد</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn btn-login d-flex align-items-center" href="#">تسجيل الدخول</a>
+            </li>
+            <div class="dropdown">
+              <a class="btn btn-lang d-flex align-items-center dropdown-toggle" href="#" role="button"
+                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                عربي
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">عربي</a>
+                <a class="dropdown-item" href="#">ENGLISH</a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container pb-3 m t-5">
+      <h1 class="text-center font-weight-bold">
+        اشتري منزل أحلامك بالميزانية المتاحة لديك !
+      </h1>
+      <p class="text-center font-weight-bold header-description">
+        متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على ميزانيتك وتفضيلاتك
+      </p>
+      <form class="form">
+        <div class="row">
+
+          <div class="col-12 col-md-6 col-animation  pt-2">
+
+            <div class="form-group mt-3">
+              <label class="control-label" for="selectCtrl">نوع العقار </label>
+              <select type="text" class="form-control" id="selectCtrl">
+                <option>نوع العقار </option>
+                <option>استديو</option>
+
+              </select>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="form-group mt-3">
+              <label class="control-label" for="selectMove">إلى أين ستنتقل؟ </label>
+              <select type="text" class="form-control" id="selectMove">
+                <option>إلى أين ستنتقل؟ </option>
+                <option>القاهرة</option>
+              </select>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="shap pb-3">
+              <span class="text-center font-weight-bold m-auto w-100 d-block pt-3 pb-3">المساحة</span>
+
+              <div class="house" id="house" data-rooms="5">
+                <div class="house-wings" data-flip-key="wings">
+                  <div class="house-left-wing">
+                    <div class="house-window"></div>
+                    <div class="house-window"></div>
+                    <div class="house-sparkle">
+                      <div class="house-sparkle-dots"></div>
+                    </div>
+                  </div>
+                  <div class="house-right-wing">
+                    <div class="house-window"></div>
+                    <div class="house-window"></div>
+                    <div class="house-sparkle">
+                      <div class="house-sparkle-dots"></div>
+                    </div>
+                  </div>
+                  <div class="house-roof">
+                    <div class="house-ledge"></div>
+                  </div>
+                </div>
+                <div class="house-front" data-flip-key="front">
+                  <div class="house-chimney"></div>
+                  <div class="house-facade"></div>
+                  <div class="house-window">
+                    <div class="house-sparkle">
+                      <div class="house-sparkle-dots"></div>
+                    </div>
+                  </div>
+                  <div class="house-doorway">
+                    <div class="house-stairs"></div>
+                    <div class="house-door"></div>
+                  </div>
+                  <div class="house-gable">
+                    <div class="house-roof">
+                      <div class="house-ledge"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <input type="range" min="3" max="6" step="1" value="6" id="range" /> -->
+              <div class="range-container container mt-4">
+                <div class="range">
+                  <input type="range" min="1" max="6" step="1" value="6" id="range" />
+                </div>
+
+                <ul class="range-labels">
+                  <li value="6">300m2< </li>
+                  <li value="5" class="active selected">201m2 - 300m2 </li>
+                  <li value="4">100m2-200m2</li>
+                  <li value="3"> 100m2> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-info">
+            <span class="title font-weight-bold d-block text-center mt-3 mb-2">نظام السداد</span>
+            <div class="btn-group btn-toggle payment-type d-flex justify-content-center">
+
+              <div class="switchbox btn-group btn-toggle payment-type d-flex justify-content-center">
+                <input type="checkbox" id="switch" name="switch" />
+                <label for="switch" data-on="ON" data-off="OFF">
+                  <span class="on btn pt-1 btn-color"> تقسيط</span>
+                  <span class="off btn pt-1">كاش</span>
+                </label>
+              </div>
+
+            </div>
+            <div class="mt-3">
+              <label class="label w-100 text-right" for="max-limite">يمكنني تحمل دفعة أولى بقيمة</label>
+              <div class="input-container">
+                <input type="text" id="max-limite" class="form-control"
+                  placeholder="الحد الاقصى أو 0 في حالة عدم توفر مقدم" />
+                <span>جم</span>
+              </div>
+            </div>
+            <div class="mt-3">
+              <label class="label w-100 text-right" for="monthly"> الأقساط التي استطيع دفعها شهريًا </label>
+              <div class="input-container">
+                <input type="text" id="monthly" class="form-control" placeholder="الحد الاقصي" />
+                <span>جم</span>
+              </div>
+            </div>
+            <input type="submit" class="form-control btn btn-block btn-submit mt-3 mb-4" value="إبدا البحث" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </header>
+
+  <section class="compounds pt-5 aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="container-fluid ">
+      <h2 class="font-weight-bold text-right pt-5 pb-5 mb-4">كمبوندات مميزة</h2>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="assets/imgs/home/logo.png" class="img-fluid" />
+            <div class="pr-2">
+              <p class="font-weight-bold text-right mb-0 mt-2">القاهرة الجديدة - The Vues</p>
+              <small class="country text-right d-block">مصر ايطاليا</small>
+              <ul class="list-unstyled p-0 mt-3">
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> مساحة الوحدات: </span>
+                      <span>من 78 م 2 إلى 260 م 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico2.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> الأسعار تبدأ من: </span>
+                      <span> 1،000،500 جنيه مصري</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/home/logo.png" class="img-fluid" />
+            <div class="pr-2">
+              <p class="font-weight-bold text-right mb-0 mt-2">القاهرة الجديدة - The Vues</p>
+              <small class="country text-right d-block">مصر ايطاليا</small>
+              <ul class="list-unstyled p-0 mt-3">
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> مساحة الوحدات: </span>
+                      <span>من 78 م 2 إلى 260 م 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico2.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> الأسعار تبدأ من: </span>
+                      <span> 1،000،500 جنيه مصري</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/home/logo.png" class="img-fluid" />
+            <div class="pr-2">
+              <p class="font-weight-bold text-right mb-0 mt-2">القاهرة الجديدة - The Vues</p>
+              <small class="country text-right d-block">مصر ايطاليا</small>
+              <ul class="list-unstyled p-0 mt-3">
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> مساحة الوحدات: </span>
+                      <span>من 78 م 2 إلى 260 م 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico2.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> الأسعار تبدأ من: </span>
+                      <span> 1،000،500 جنيه مصري</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/home/logo.png" class="img-fluid" />
+            <div class="pr-2">
+              <p class="font-weight-bold text-right mb-0 mt-2">القاهرة الجديدة - The Vues</p>
+              <small class="country text-right d-block">مصر ايطاليا</small>
+              <ul class="list-unstyled p-0 mt-3">
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> مساحة الوحدات: </span>
+                      <span>من 78 م 2 إلى 260 م 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico2.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> الأسعار تبدأ من: </span>
+                      <span> 1،000،500 جنيه مصري</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/home/logo.png" class="img-fluid" />
+            <div class="pr-2">
+              <p class="font-weight-bold text-right mb-0 mt-2">القاهرة الجديدة - The Vues</p>
+              <small class="country text-right d-block">مصر ايطاليا</small>
+              <ul class="list-unstyled p-0 mt-3">
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> مساحة الوحدات: </span>
+                      <span>من 78 م 2 إلى 260 م 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico2.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> الأسعار تبدأ من: </span>
+                      <span> 1،000،500 جنيه مصري</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/home/logo.png" class="img-fluid" />
+            <div class="pr-2">
+              <p class="font-weight-bold text-right mb-0 mt-2">القاهرة الجديدة - The Vues</p>
+              <small class="country text-right d-block">مصر ايطاليا</small>
+              <ul class="list-unstyled p-0 mt-3">
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> مساحة الوحدات: </span>
+                      <span>من 78 م 2 إلى 260 م 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico2.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> الأسعار تبدأ من: </span>
+                      <span> 1،000،500 جنيه مصري</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/imgs/home/logo.png" class="img-fluid" />
+            <div class="pr-2">
+              <p class="font-weight-bold text-right mb-0 mt-2">القاهرة الجديدة - The Vues</p>
+              <small class="country text-right d-block">مصر ايطاليا</small>
+              <ul class="list-unstyled p-0 mt-3">
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> مساحة الوحدات: </span>
+                      <span>من 78 م 2 إلى 260 م 2</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-container">
+                    <div class="img-container">
+                      <img src="assets/imgs/home/ico2.png" width="15px" height="16px" />
+                    </div>
+                    <div class="text-right">
+                      <span> الأسعار تبدأ من: </span>
+                      <span> 1،000،500 جنيه مصري</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="most-viewed pt-5  aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="container">
+      <div class="row justify-content-between pb-4">
+        <h2 class="font-weight-bold text-right pt-5 pb-5 col-sm-10 col-8">الأكثر مشاهدة</h2>
+
+        <div class="pagination-container col-sm-2 col-4">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <img src="assets/imgs/home/icon-arrow-left.svg" width="17px" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="assets/imgs/home/icon-arrow-right.svg" width="17px" />
+          </div>
+        </div>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="p-relative">
+              <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
+              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+            </div>
+            <div class=" pr-2 pl-2">
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/logo.png" width="50px" height="50px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">النموذج الاول - الطابق الارضي</p>
+                  <small class="country text-right d-block">223123</small>
+                </div>
+              </div>
+              <div class="info-list">
+                <ul class="list-unstyled p-0 text-right">
+                  <li> <span>المساحه:</span> <span>168 m2</span></li>
+                  <li> <span>الغرف:</span> <span> 3</span></li>
+                  <li> <span>الحمامات:</span> <span> 2</span></li>
+                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                </ul>
+
+              </div>
+              <ul class="list-unstyled list-money p-1">
+                <li> <span>المقدم:</span> <span>لا يوجد</span></li>
+                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
+              </ul>
+              <ul class="list-unstyled list-benefits p-1 text-right">
+                <li><img src="assets/imgs/benefits/grass.png" /></li>
+                <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                <li><img src="assets/imgs/benefits/running.png" /></li>
+                <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                <li><img src="assets/imgs/benefits/playground.png" /></li>
+                <li><img src="assets/imgs/benefits/interior.png" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="p-relative">
+              <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
+              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+            </div>
+            <div class=" pr-2 pl-2">
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/logo.png" width="50px" height="50px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">النموذج الاول - الطابق الارضي</p>
+                  <small class="country text-right d-block">223123</small>
+                </div>
+              </div>
+              <div class="info-list">
+                <ul class="list-unstyled p-0 text-right">
+                  <li> <span>المساحه:</span> <span>168 m2</span></li>
+                  <li> <span>الغرف:</span> <span> 3</span></li>
+                  <li> <span>الحمامات:</span> <span> 2</span></li>
+                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                </ul>
+
+              </div>
+              <ul class="list-unstyled list-money p-1">
+                <li> <span>المقدم:</span> <span>لا يوجد</span></li>
+                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
+              </ul>
+              <ul class="list-unstyled list-benefits p-1 text-right">
+                <li><img src="assets/imgs/benefits/grass.png" /></li>
+                <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                <li><img src="assets/imgs/benefits/running.png" /></li>
+                <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                <li><img src="assets/imgs/benefits/playground.png" /></li>
+                <li><img src="assets/imgs/benefits/interior.png" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="p-relative">
+              <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
+              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+            </div>
+            <div class=" pr-2 pl-2">
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/logo.png" width="50px" height="50px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">النموذج الاول - الطابق الارضي</p>
+                  <small class="country text-right d-block">223123</small>
+                </div>
+              </div>
+              <div class="info-list">
+                <ul class="list-unstyled p-0 text-right">
+                  <li> <span>المساحه:</span> <span>168 m2</span></li>
+                  <li> <span>الغرف:</span> <span> 3</span></li>
+                  <li> <span>الحمامات:</span> <span> 2</span></li>
+                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                </ul>
+
+              </div>
+              <ul class="list-unstyled list-money p-1">
+                <li> <span>المقدم:</span> <span>لا يوجد</span></li>
+                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
+              </ul>
+              <ul class="list-unstyled list-benefits p-1 text-right">
+                <li><img src="assets/imgs/benefits/grass.png" /></li>
+                <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                <li><img src="assets/imgs/benefits/running.png" /></li>
+                <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                <li><img src="assets/imgs/benefits/playground.png" /></li>
+                <li><img src="assets/imgs/benefits/interior.png" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="p-relative">
+              <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
+              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+            </div>
+            <div class="pr-2 pl-2">
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/logo.png" width="50px" height="50px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">النموذج الاول - الطابق الارضي</p>
+                  <small class="country text-right d-block">223123</small>
+                </div>
+              </div>
+              <div class="info-list">
+                <ul class="list-unstyled p-0 text-right">
+                  <li> <span>المساحه:</span> <span>168 m2</span></li>
+                  <li> <span>الغرف:</span> <span> 3</span></li>
+                  <li> <span>الحمامات:</span> <span> 2</span></li>
+                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                </ul>
+
+              </div>
+              <ul class="list-unstyled list-money p-1">
+                <li> <span>المقدم:</span> <span>لا يوجد</span></li>
+                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
+              </ul>
+              <ul class="list-unstyled list-benefits p-1 text-right">
+                <li><img src="assets/imgs/benefits/grass.png" /></li>
+                <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                <li><img src="assets/imgs/benefits/running.png" /></li>
+                <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                <li><img src="assets/imgs/benefits/playground.png" /></li>
+                <li><img src="assets/imgs/benefits/interior.png" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="p-relative">
+              <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
+              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+            </div>
+            <div class="pr-2 pl-2">
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/logo.png" width="50px" height="50px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">النموذج الاول - الطابق الارضي</p>
+                  <small class="country text-right d-block">223123</small>
+                </div>
+              </div>
+              <div class="info-list">
+                <ul class="list-unstyled p-0 text-right">
+                  <li> <span>المساحه:</span> <span>168 m2</span></li>
+                  <li> <span>الغرف:</span> <span> 3</span></li>
+                  <li> <span>الحمامات:</span> <span> 2</span></li>
+                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                </ul>
+
+              </div>
+              <ul class="list-unstyled list-money p-1">
+                <li> <span>المقدم:</span> <span>لا يوجد</span></li>
+                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
+              </ul>
+              <ul class="list-unstyled list-benefits p-1 text-right">
+                <li><img src="assets/imgs/benefits/grass.png" /></li>
+                <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                <li><img src="assets/imgs/benefits/running.png" /></li>
+                <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                <li><img src="assets/imgs/benefits/playground.png" /></li>
+                <li><img src="assets/imgs/benefits/interior.png" /></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="why-us py-5 mt-2  aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-6 col-12 text-right">
+          <h2 class="mb-4">لماذا تختارنا؟</h2>
+          <p class="ml-5 pl-4">متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على ميزانيتك
+            وتفضيلاتك</p>
+          <ul class="list-unstyled p-0 mt-5">
+            <li>
+              <div class="img-container">
+                <img src="assets/imgs/home/dev.png" width="20px" height="21px" />
+              </div>
+              <div>
+                <span>100</span>
+                <span>مطور</span>
+              </div>
+            </li>
+            <li>
+              <div class="img-container">
+                <img src="assets/imgs/home/compund.png" width="20px" height="21px" />
+              </div>
+              <div>
+                <span>100</span>
+                <span>كمبوند</span>
+              </div>
+            </li>
+            <li>
+              <div class="img-container">
+                <img src="assets/imgs/home/flat.png" width="20px" height="21px" />
+              </div>
+              <div>
+                <span>100</span>
+                <span>شقة</span>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="list-unstyled p-0 mt-5 d-block w-100 pt-3">
+            <li>
+              <span class="d-inline pl-3">
+                <img src="assets/imgs/home/check.png" width="16px" height="13px" /></span>
+              <span class="d-inline">خدمة شخصية</span>
+            </li>
+            <li>
+              <span class="d-inline pl-3">
+                <img src="assets/imgs/home/check.png" width="16px" height="13px" /></span>
+              <span class="d-inline"> مجانا</span>
+            </li>
+            <li>
+              <span class="d-inline pl-3">
+                <img src="assets/imgs/home/check.png" width="16px" height="13px" /></span>
+              <span class="d-inline">موثوق به</span>
+            </li>
+            <li>
+              <span class="d-inline pl-3">
+                <img src="assets/imgs/home/check.png" width="16px" height="13px" /></span>
+              <span class="d-inline"> مستشارون محايدون</span>
+            </li>
+            <li>
+              <span class="d-inline pl-3">
+                <img src="assets/imgs/home/check.png" width="16px" height="13px" /></span>
+              <span class="d-inline">تقديم خيارات على أساس الميزانيات المتاحة</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-12">
+          <img src="assets/imgs/home/why-us.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials  aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="container text-right p-relative">
+      <div class="icon-container ">
+        <img src="assets/imgs/home/quote.png" width="32px" height="32px" />
+      </div>
+      <h2 class="p-relative">أراء من عملائنا</h2>
+      <p>متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على ميزانيتك وتفضيلاتك</p>
+
+      <div class="pagination-container  py-5 col-sm-2 col-12">
+
+        <div class="swiper-button-next">
+          <img src="assets/imgs/home/icon-arrow-right-black.svg" width="17px" />
+        </div>
+        <div class="swiper-button-prev">
+          <img src="assets/imgs/home/icon-arrow-left-black.svg" width="17px" />
+        </div>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper-container ">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide">
+
+            <div class=" pr-2 pl-2">
+              <p class="text-right">متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على
+                ميزانيتك وتفضيلاتك، متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على
+                ميزانيتك وتفضيلاتك، </p>
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/client.png" width="55px" height="55px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">محمد أحمد</p>
+                  <small class="country text-right d-block">مصمم واجهات</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+            <div class=" pr-2 pl-2">
+              <p class="text-right">متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على
+                ميزانيتك وتفضيلاتك، متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على
+                ميزانيتك وتفضيلاتك، </p>
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/client.png" width="55px" height="55px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">محمد أحمد</p>
+                  <small class="country text-right d-block">مصمم واجهات</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+            <div class=" pr-2 pl-2">
+              <p class="text-right">متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على
+                ميزانيتك وتفضيلاتك، متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على
+                ميزانيتك وتفضيلاتك، </p>
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/client.png" width="55px" height="55px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">محمد أحمد</p>
+                  <small class="country text-right d-block">مصمم واجهات</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+            <div class=" pr-2 pl-2">
+              <p class="text-right">متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على
+                ميزانيتك وتفضيلاتك، متدورش تاني! هنا هتلاقي كل المعلومات إلي محتاجها وكل الخيارات المتاحة بناءً على
+                ميزانيتك وتفضيلاتك، </p>
+              <div class="info d-flex py-2">
+                <div class="pl-3">
+                  <img src="assets/imgs/home/client.png" width="55px" height="55px" class="img-rounded " />
+
+                </div>
+                <div>
+                  <p class="font-weight-bold text-right mb-0 mt-2">محمد أحمد</p>
+                  <small class="country text-right d-block">مصمم واجهات</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer ">
+    <div class="topFooter">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <h2 class="text-right">
+              اشتري منزل أحلامك
+              <p> بالميزانية المتاحة لديك !</p>
+            </h2>
+          </div>
+          <div class="col-md-6 col-12 m-auto">
+            <ul class="list-unstyled d-flex align-items-center justify-content-between p-0 flex-direction-sm">
+              <li class=" d-flex align-items-center justify-content-center">
+                <a href="#" class="btn btn-block btn-contact hvr-ripple-out">
+                  <img src="assets/imgs/home/phone-icon.png" width="18px" height="18px" />
+                  اتصل الان
+                </a>
+              </li>
+              <li class=" d-flex align-items-center justify-content-center">
+                <a href="#" class="btn btn-block btn-faq hvr-ripple-out">تفقد الأسئلة الشائعة</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 col-md-1 text-right">
+            <img src="assets/imgs/logo-blue.png" height="33px" />
+          </div>
+          <div class="col-md-4 col-9 ml-auto">
+            <ul class="list-unstyled d-flex align-items-center justify-content-between">
+              <li><a href="#">كيف نعمل</a></li>
+              <li><a href="#">الاسئله الشائعه</a></li>
+              <li><a href="#">سياسة الاستخدام</a></li>
+            </ul>
+          </div>
+          <div class="col-12  col-md-4 mr-auto">
+            <ul class="list-unstyled d-flex align-items-center justify-content-between socialLinks">
+              <li><a href="#" class="font-weight-bold "><img src="assets/imgs/phone-icon.png" class="mx-2" width="32px"
+                    height="32px" />201003453395+</a></li>
+              <li><a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a></li>
+              <li><a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a></li>
+              <li><a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a></li>
+              <li><a href="#">
+                  <i class="fab fa-facebook-square"></i>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.compounds .swiper-container', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+
+      });
+      var swiper2 = new Swiper('.most-viewed .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loopedSlides: 4,
+        navigation: {
+          nextEl: '.most-viewed .swiper-button-next',
+          prevEl: '.most-viewed .swiper-button-prev',
+        },
+      });
+      var swiper3 = new Swiper('.testimonials .swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loopedSlides: 1,
+        navigation: {
+          nextEl: '.testimonials .swiper-button-next',
+          prevEl: '.testimonials .swiper-button-prev',
+        },
+
+      });
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/flipping@0.5.3/dist/flipping.animationFrame.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
+    <script src="assets/js/shap.js"></script>
+
+  </footer>
+</body>
+
+</html>
