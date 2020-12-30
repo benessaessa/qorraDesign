@@ -21,6 +21,44 @@
 <body dir="rtl">
   <header>
     <div class="nav-container">
+      <div class="burger">
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+      </div>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="" class="menu__link">كيف نعمل</a>
+          </li>
+          <li class="menu__item"><a href="" class="menu__link">الاسئلة الشائعه</a>
+          </li>
+          <li class="menu__item">
+            <a class="nav-link  menu__link d-flex align-items-center" href="#">
+              <img src="assets/imgs/phone-icon.png" class="mx-2" width="32px" height="32px" />
+              201003453395+
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link  " href="#">حساب جديد</a>
+          </li>
+          <li class="menu__item">
+            <a class=" menu__link " href="#">تسجيل الدخول</a>
+          </li>
+          <div class="dropdown">
+            <a class="btn btn-lang  menu__link d-flex align-items-center dropdown-toggle" href="#" role="button"
+              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              عربي
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">عربي</a>
+              <a class="dropdown-item" href="#">ENGLISH</a>
+            </div>
+          </div>
+
+        </ul>
+      </nav>
+
       <nav class="navbar navbar-expand-lg p-0 container " id="top-nav">
         <div class="navBrand">
           <a class="navbar-brand" href="#">
@@ -28,10 +66,10 @@
           </a>
         </div>
 
-        <button class="nav-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span id="nav-icon3"><span></span><span></span><span></span><span></span></span>
-        </button>
+        <!-- <button class="nav-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span id="nav-icon3"><span></span><span></span><span></span><span></span></span>
+           </button>
+        -->
 
         <div class="collapse navbar-collapse nav-menu " id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -49,14 +87,10 @@
                 <img src="assets/imgs/phone-icon.png" class="mx-2" width="32px" height="32px" />
                 201003453395+
               </a>
-
             </li>
-
-
             <li class="nav-item">
               <a class="nav-link btn btn-navy d-flex align-items-center" href="#">حساب جديد</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link btn btn-login d-flex align-items-center" href="#">تسجيل الدخول</a>
             </li>
@@ -65,7 +99,6 @@
                 id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 عربي
               </a>
-
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <a class="dropdown-item" href="#">عربي</a>
                 <a class="dropdown-item" href="#">ENGLISH</a>
@@ -76,7 +109,7 @@
       </nav>
     </div>
 
-    <div class="container pb-3 m t-5">
+    <div class="container pb-3 m mt-5">
       <h1 class="text-center font-weight-bold">
         اشتري منزل أحلامك بالميزانية المتاحة لديك !
       </h1>
@@ -201,7 +234,7 @@
 
   <section class="compounds pt-5 aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <div class="container-fluid ">
-      <h2 class="font-weight-bold text-right pt-5 pb-5 mb-4">كمبوندات مميزة</h2>
+      <h2 class="font-weight-bold text-right pt-5 pb-5 mb-4 container">كمبوندات مميزة</h2>
       <!-- Swiper -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -433,9 +466,9 @@
   <section class="most-viewed pt-5  aos-init aos-animate" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <div class="container">
       <div class="row justify-content-between pb-4">
-        <h2 class="font-weight-bold text-right pt-5 pb-5 col-sm-10 col-8">الأكثر مشاهدة</h2>
+        <h2 class="font-weight-bold text-right pt-5 pb-5 col-sm-10 col-7">الأكثر مشاهدة</h2>
 
-        <div class="pagination-container col-sm-2 col-4">
+        <div class="pagination-container col-sm-2 col-5">
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev">
             <img src="assets/imgs/home/icon-arrow-left.svg" width="17px" />
@@ -451,7 +484,27 @@
           <div class="swiper-slide">
             <div class="p-relative">
               <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
-              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+              <svg class="add-fav" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
+
+                <g fill="none" fill-rule="evenodd">
+
+                  <g fill="#FFF" fill-rule="nonzero">
+
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="M17.83 7.725l-7.641 8.083-7.642-8.117c-.914-1.125-1.273-1.886-1.273-2.927 0-1.942 1.563-3.689 3.82-3.705 1.857-.014 3.962 1.667 5.095 2.935 1.102-1.223 3.237-2.935 5.094-2.935 2.198 0 3.82 1.763 3.82 3.705 0 1.041-.284 1.858-1.273 2.96zM15.283 0c-2.122 0-3.728 1.104-5.094 2.258C8.888 1.034 7.217 0 5.094 0 2.105 0 0 2.279 0 4.764c0 1.333.616 2.293 1.29 3.195l7.917 8.416c.889.833 1.057.833 1.945 0l7.935-8.416c.794-.902 1.29-1.862 1.29-3.195C20.377 2.279 18.272 0 15.283 0z"
+                            transform="translate(-950 -2000) translate(149 1681) translate(781 132) translate(20.377 187)" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+
+              </svg>
+
+
             </div>
             <div class=" pr-2 pl-2">
               <div class="info d-flex py-2">
@@ -469,14 +522,14 @@
                   <li> <span>المساحه:</span> <span>168 m2</span></li>
                   <li> <span>الغرف:</span> <span> 3</span></li>
                   <li> <span>الحمامات:</span> <span> 2</span></li>
-                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>السعر:</span> <span> EGP 12,600</span></li>
                   <li> <span>موعد التسليم:</span> <span> 2020</span></li>
                 </ul>
 
               </div>
               <ul class="list-unstyled list-money p-1">
                 <li> <span>المقدم:</span> <span>لا يوجد</span></li>
-                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>القسط:</span> <span> EGP 12,600</span></li>
                 <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
               </ul>
               <ul class="list-unstyled list-benefits p-1 text-right">
@@ -495,7 +548,22 @@
           <div class="swiper-slide">
             <div class="p-relative">
               <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
-              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+              <svg class="add-fav" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
+                <g fill="none" fill-rule="evenodd">
+                  <g fill="#FFF" fill-rule="nonzero">
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="M17.83 7.725l-7.641 8.083-7.642-8.117c-.914-1.125-1.273-1.886-1.273-2.927 0-1.942 1.563-3.689 3.82-3.705 1.857-.014 3.962 1.667 5.095 2.935 1.102-1.223 3.237-2.935 5.094-2.935 2.198 0 3.82 1.763 3.82 3.705 0 1.041-.284 1.858-1.273 2.96zM15.283 0c-2.122 0-3.728 1.104-5.094 2.258C8.888 1.034 7.217 0 5.094 0 2.105 0 0 2.279 0 4.764c0 1.333.616 2.293 1.29 3.195l7.917 8.416c.889.833 1.057.833 1.945 0l7.935-8.416c.794-.902 1.29-1.862 1.29-3.195C20.377 2.279 18.272 0 15.283 0z"
+                            transform="translate(-950 -2000) translate(149 1681) translate(781 132) translate(20.377 187)" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
             </div>
             <div class=" pr-2 pl-2">
               <div class="info d-flex py-2">
@@ -513,14 +581,14 @@
                   <li> <span>المساحه:</span> <span>168 m2</span></li>
                   <li> <span>الغرف:</span> <span> 3</span></li>
                   <li> <span>الحمامات:</span> <span> 2</span></li>
-                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>السعر:</span> <span> EGP 12,600</span></li>
                   <li> <span>موعد التسليم:</span> <span> 2020</span></li>
                 </ul>
 
               </div>
               <ul class="list-unstyled list-money p-1">
                 <li> <span>المقدم:</span> <span>لا يوجد</span></li>
-                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>القسط:</span> <span> EGP 12,600</span></li>
                 <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
               </ul>
               <ul class="list-unstyled list-benefits p-1 text-right">
@@ -539,7 +607,22 @@
           <div class="swiper-slide">
             <div class="p-relative">
               <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
-              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+              <svg class="add-fav" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
+                <g fill="none" fill-rule="evenodd">
+                  <g fill="#FFF" fill-rule="nonzero">
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="M17.83 7.725l-7.641 8.083-7.642-8.117c-.914-1.125-1.273-1.886-1.273-2.927 0-1.942 1.563-3.689 3.82-3.705 1.857-.014 3.962 1.667 5.095 2.935 1.102-1.223 3.237-2.935 5.094-2.935 2.198 0 3.82 1.763 3.82 3.705 0 1.041-.284 1.858-1.273 2.96zM15.283 0c-2.122 0-3.728 1.104-5.094 2.258C8.888 1.034 7.217 0 5.094 0 2.105 0 0 2.279 0 4.764c0 1.333.616 2.293 1.29 3.195l7.917 8.416c.889.833 1.057.833 1.945 0l7.935-8.416c.794-.902 1.29-1.862 1.29-3.195C20.377 2.279 18.272 0 15.283 0z"
+                            transform="translate(-950 -2000) translate(149 1681) translate(781 132) translate(20.377 187)" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
             </div>
             <div class=" pr-2 pl-2">
               <div class="info d-flex py-2">
@@ -557,14 +640,14 @@
                   <li> <span>المساحه:</span> <span>168 m2</span></li>
                   <li> <span>الغرف:</span> <span> 3</span></li>
                   <li> <span>الحمامات:</span> <span> 2</span></li>
-                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>السعر:</span> <span> EGP 12,600</span></li>
                   <li> <span>موعد التسليم:</span> <span> 2020</span></li>
                 </ul>
 
               </div>
               <ul class="list-unstyled list-money p-1">
                 <li> <span>المقدم:</span> <span>لا يوجد</span></li>
-                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>القسط:</span> <span> EGP 12,600</span></li>
                 <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
               </ul>
               <ul class="list-unstyled list-benefits p-1 text-right">
@@ -583,7 +666,22 @@
           <div class="swiper-slide">
             <div class="p-relative">
               <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
-              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+              <svg class="add-fav" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
+                <g fill="none" fill-rule="evenodd">
+                  <g fill="#FFF" fill-rule="nonzero">
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="M17.83 7.725l-7.641 8.083-7.642-8.117c-.914-1.125-1.273-1.886-1.273-2.927 0-1.942 1.563-3.689 3.82-3.705 1.857-.014 3.962 1.667 5.095 2.935 1.102-1.223 3.237-2.935 5.094-2.935 2.198 0 3.82 1.763 3.82 3.705 0 1.041-.284 1.858-1.273 2.96zM15.283 0c-2.122 0-3.728 1.104-5.094 2.258C8.888 1.034 7.217 0 5.094 0 2.105 0 0 2.279 0 4.764c0 1.333.616 2.293 1.29 3.195l7.917 8.416c.889.833 1.057.833 1.945 0l7.935-8.416c.794-.902 1.29-1.862 1.29-3.195C20.377 2.279 18.272 0 15.283 0z"
+                            transform="translate(-950 -2000) translate(149 1681) translate(781 132) translate(20.377 187)" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
             </div>
             <div class="pr-2 pl-2">
               <div class="info d-flex py-2">
@@ -601,14 +699,14 @@
                   <li> <span>المساحه:</span> <span>168 m2</span></li>
                   <li> <span>الغرف:</span> <span> 3</span></li>
                   <li> <span>الحمامات:</span> <span> 2</span></li>
-                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>السعر:</span> <span> EGP 12,600</span></li>
                   <li> <span>موعد التسليم:</span> <span> 2020</span></li>
                 </ul>
 
               </div>
               <ul class="list-unstyled list-money p-1">
                 <li> <span>المقدم:</span> <span>لا يوجد</span></li>
-                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>القسط:</span> <span> EGP 12,600</span></li>
                 <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
               </ul>
               <ul class="list-unstyled list-benefits p-1 text-right">
@@ -627,7 +725,22 @@
           <div class="swiper-slide">
             <div class="p-relative">
               <img src="assets/imgs/home/mostViewed.png" class="img-fluid" />
-              <img src="assets/imgs/home/heart-like.svg" class="add-fav cursor-pointer" />
+              <svg class="add-fav" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
+                <g fill="none" fill-rule="evenodd">
+                  <g fill="#FFF" fill-rule="nonzero">
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="M17.83 7.725l-7.641 8.083-7.642-8.117c-.914-1.125-1.273-1.886-1.273-2.927 0-1.942 1.563-3.689 3.82-3.705 1.857-.014 3.962 1.667 5.095 2.935 1.102-1.223 3.237-2.935 5.094-2.935 2.198 0 3.82 1.763 3.82 3.705 0 1.041-.284 1.858-1.273 2.96zM15.283 0c-2.122 0-3.728 1.104-5.094 2.258C8.888 1.034 7.217 0 5.094 0 2.105 0 0 2.279 0 4.764c0 1.333.616 2.293 1.29 3.195l7.917 8.416c.889.833 1.057.833 1.945 0l7.935-8.416c.794-.902 1.29-1.862 1.29-3.195C20.377 2.279 18.272 0 15.283 0z"
+                            transform="translate(-950 -2000) translate(149 1681) translate(781 132) translate(20.377 187)" />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
             </div>
             <div class="pr-2 pl-2">
               <div class="info d-flex py-2">
@@ -645,14 +758,14 @@
                   <li> <span>المساحه:</span> <span>168 m2</span></li>
                   <li> <span>الغرف:</span> <span> 3</span></li>
                   <li> <span>الحمامات:</span> <span> 2</span></li>
-                  <li> <span>السعر:</span> <span> EGP12,600</span></li>
+                  <li> <span>السعر:</span> <span> EGP 12,600</span></li>
                   <li> <span>موعد التسليم:</span> <span> 2020</span></li>
                 </ul>
 
               </div>
               <ul class="list-unstyled list-money p-1">
                 <li> <span>المقدم:</span> <span>لا يوجد</span></li>
-                <li> <span>القسط:</span> <span> EGP12,600</span></li>
+                <li> <span>القسط:</span> <span> EGP 12,600</span></li>
                 <li> <span>سنين القسط:</span> <span class="p-color"> 10 سنوات</span></li>
               </ul>
               <ul class="list-unstyled list-benefits p-1 text-right">
@@ -880,13 +993,13 @@
             <img src="assets/imgs/logo-blue.png" height="33px" />
           </div>
           <div class="col-md-4 col-9 ml-auto">
-            <ul class="list-unstyled d-flex align-items-center justify-content-between">
+            <ul class="list-unstyled d-flex align-items-center justify-content-between p-0">
               <li><a href="#">كيف نعمل</a></li>
               <li><a href="#">الاسئله الشائعه</a></li>
               <li><a href="#">سياسة الاستخدام</a></li>
             </ul>
           </div>
-          <div class="col-12  col-md-4 mr-auto">
+          <div class="col-12 col-lg-4 col-md-6 mr-auto">
             <ul class="list-unstyled d-flex align-items-center justify-content-between socialLinks">
               <li><a href="#" class="font-weight-bold "><img src="assets/imgs/phone-icon.png" class="mx-2" width="32px"
                     height="32px" />201003453395+</a></li>
@@ -931,6 +1044,18 @@
       var swiper = new Swiper('.compounds .swiper-container', {
         slidesPerView: 5,
         spaceBetween: 30,
+        slidesPerView: 'auto',
+        loop: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        autoplay: {
+          delay: 5000,
+        },
 
       });
       var swiper2 = new Swiper('.most-viewed .swiper-container', {
@@ -944,7 +1069,7 @@
       });
       var swiper3 = new Swiper('.testimonials .swiper-container', {
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 40,
         loopedSlides: 1,
         navigation: {
           nextEl: '.testimonials .swiper-button-next',
@@ -952,12 +1077,73 @@
         },
 
       });
+      //Reload swiper
+      $(window).resize(function () {
+        swiper3.update();
+      });
+      $(window).on('load', function () {
+        swiper3.update();
+      });
     </script>
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/flipping@0.5.3/dist/flipping.animationFrame.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
     <script src="assets/js/shap.js"></script>
+    <script>
+      (function () {
 
+        var Menu = (function () {
+          var burger = document.querySelector('.burger');
+          var menu = document.querySelector('.menu');
+          var menuList = document.querySelector('.menu__list');
+          var menuContainer = document.querySelector('.nav-container');
+          var menuItems = document.querySelectorAll('.menu__item');
+
+          var active = false;
+
+          var toggleMenu = function () {
+            if (!active) {
+              menu.classList.add('menu--active');
+              menuContainer.classList.add('menuContainer');
+              menuList.classList.add('menu__list--active');
+
+              burger.classList.add('burger--close');
+              for (var i = 0, ii = menuItems.length; i < ii; i++) {
+                menuItems[i].classList.add('menu__item--active');
+              }
+
+              active = true;
+            } else {
+              menu.classList.remove('menu--active');
+              menuList.classList.remove('menu__list--active');
+              menuContainer.classList.remove('menuContainer');
+              burger.classList.remove('burger--close');
+              for (var i = 0, ii = menuItems.length; i < ii; i++) {
+                menuItems[i].classList.remove('menu__item--active');
+              }
+
+              active = false;
+            }
+          };
+
+          var bindActions = function () {
+            burger.addEventListener('click', toggleMenu, false);
+          };
+
+          var init = function () {
+            bindActions();
+          };
+
+          return {
+            init: init
+          };
+
+        }());
+
+        Menu.init();
+
+      }());
+    </script>
   </footer>
 </body>
 

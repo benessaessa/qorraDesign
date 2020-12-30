@@ -2844,3 +2844,61 @@ header *:before,header *:after {
   }
   
 }
+
+
+@media (max-width: 400px){
+  [data-rooms="6"] .house-wings {
+    width: 273px;
+    left: calc(80% - 212.5px);
+  }
+  [data-rooms="6"] .house-front {
+    width: 108px;
+    left: calc(56% - 75px);
+
+  }
+ .house-left-wing {
+    left: 10px;
+}
+ .house-right-wing {
+  right: 10px;}
+  
+  [data-rooms="5"] {
+    --wings-width: 335px;
+    --front-width: 150px;
+  }
+  [data-rooms="5"] .house-wings {
+    width: 250px;
+    left: calc(74% - 177.5px);
+  }
+  [data-rooms="5"] .house-front {
+    width: 105px;
+    left: calc(60% - 75px);
+  }
+  
+  [data-rooms="4"] {
+    --wings-width: 300px;
+    --front-width: 125px;
+  }
+  [data-rooms="4"] .house-wings {
+    width: 246px;
+    left: calc(64% - 151px);
+  }
+  [data-rooms="4"] .house-front {
+    width: 110px;
+    left: calc(54% - 62.5px);
+  }
+  
+  [data-rooms="3"] {
+    --wings-width: 195px;
+    --front-width: 150px;
+  }
+  [data-rooms="3"] .house-wings {
+    width: 195px;
+    left: calc(54% - 120px);
+  }
+  [data-rooms="3"] .house-front {
+    width: 105px;
+    left: calc(54% - 75px);
+  }
+  
+}

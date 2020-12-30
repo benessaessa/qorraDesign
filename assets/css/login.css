@@ -19,9 +19,6 @@
     border-radius: 18px;
     border: solid 1px #f2f2f2;
 }
- .imgLogin{
-    min-height: 100vh;
- } 
 .newCheckbox .custom-control-input {
     border: 1px solid transparent;
     text-align: right;
@@ -33,19 +30,27 @@
 .input-group-text,.newInputGroup input{
     border-radius: 0;
 }
-@media (max-width: 992px){
+@media screen and (min-width:700px){
+    .loginSection{
+        padding-right: 1.7%;
+    }
+    .bottomFooter{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+    .bgWhite{
+        background-color: white;
+    }
     .imgLogin{
-        padding: 1rem;
-        min-height: unset;
-        width: 100%;
-        object-fit: cover;
-        max-height: 100vh;
-        border-radius: 5px;
+        padding-top: 6%;
+    }
+    .imgRegister{
+        padding-top: 12%;
     }
 }
-@media screen and (min-width:1040px) and (max-width:1600px){
-    .imgLogin{
-        min-height: 125vh;
-        /* object-fit: cover; */
+@media screen and (max-width:500px){
+    .loginSection{
+        background-color: white;
+        margin-left: 2rem;
     }
 }
