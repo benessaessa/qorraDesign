@@ -5,18 +5,22 @@ header .navbar,header{
 header .navbar-nav .nav-link,header .list-unstyled .nav-item:first-child .nav-link,header .list-unstyled .dropdown a{
     color: rgba(13, 36, 54, 0.8);
 }
+nav .btn-navy:hover{
+    background-color: white !important;
+    border-color: #1473d3;
+    color: #1473d3;
+    box-shadow: none;
+}
 .nav-button #nav-icon3 span{
     background-color: #1473d3;
 }
-.btn-login:hover{
+nav .btn-login:hover{
     background-color: white;
-    border-color: red;
-    color: red !important;
+    color: #ef106c;
+    border-color: #ef106c;
+    box-shadow: none;
 }
-.btnLogin{
-    color: white;
-    background-color: #1473d3;
-}
+
 @media (max-width: 992px){
     .navbar-collapse.collapse.show ul a ,.list-unstyled .nav-item:first-child .nav-link{
         justify-content: center;

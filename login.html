@@ -56,7 +56,7 @@
         </ul>
       </nav>
 
-      <nav class="navbar navbar-expand-lg p-0 container-fluid px-4 " id="top-nav">
+      <nav class="navbar navbar-expand-lg p-0 container-fluid px-4 fixed-top" id="top-nav">
         <div class="navBrand">
           <a class="navbar-brand" href="#">
             <img src="assets/imgs/logo-blue.png" alt="qorraa" width="122px" height="67px" />
@@ -135,11 +135,33 @@
                     <input type="checkbox" class="custom-control-input" id="customCheck">
                     <label class="custom-control-label" for="customCheck">تذكرني</label>
                   </div>
-                  <span><a href="#">نسيت كلمة المرور</a></span>
+                  <span><button type="button" data-toggle="modal" class="bg-white border-0" data-target="#forgetPass">نسيت كلمة المرور</button></span>
                 </div>
-                <button class="btn btnLogin font-weight-bold btn-block mt-3">دخول</button>
+                <button type="submit" class="btn btnLogin font-weight-bold btn-block mt-3">دخول</button>
                 <p class="text-center pt-3">ليس لديك حساب؟ <a href="register.html">سجل الان</a></p>
               </form>
+              <!-- Modal -->
+              <div class="modal fade" id="forgetPass" tabindex="-1" role="dialog" aria-labelledby="forgetPass" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title mr-auto d-block text-left" id="forgetPass">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button></h5>
+                      
+                    </div>
+                    <div class="modal-body text-center">
+                      <h4 class="text-primary font-weight-bold">هل نسيت الرقم السري</h4>
+                      <p class="text-muted">فضلا قم بادخال البريد الالكتروني الخاص بحسابك</p>
+                      <form action="forget-password.html" class="pt-3">
+                        <input type="email" required class="form-control py-4" placeholder="البريد الالكتروني">
+                        <button type="submit" class="btn btnLogin font-weight-bold btn-block mt-4">ارسال</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -200,7 +222,6 @@
   <script>
     AOS.init();
   </script>
-  <script src="assets/js/main.js"></script>
   <script src="https://unpkg.com/flipping@0.5.3/dist/flipping.animationFrame.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
   <script src="assets/js/shap.js"></script>

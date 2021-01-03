@@ -1,9 +1,13 @@
-.btn-navy:hover,.btnLogin:hover{
+.btnLogin{
+    color: white;
+    background-color: #1473d3;
+}
+.btnLogin:hover{
     background-color: white;
     border-color: #1473d3;
 }
 .loginSection{
-    /* padding: 1rem ; */
+    padding-top: 4.8rem ;
     background-color:#f7f8fe;
 }
 .loginSection h1{
@@ -23,7 +27,13 @@
     border: 1px solid transparent;
     text-align: right;
 }
+.modal-backdrop {
+    z-index: 100000 !important;
+  }
 
+  .modal {
+    z-index: 100001 !important;
+  }
 .newCheckbox .custom-control-input input {
     float: right;
 }
