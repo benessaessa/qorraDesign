@@ -122,7 +122,7 @@
                 </div>
                 <div class="form-group" >
                   <label for="email">البريد الالكتروني</label>
-                  <input type="email" id="email" required class="form-control py-4" placeholder="mohamed@gmail.com">
+                  <input type="email" id="email" required class="form-control py-4" placeholder="example@pencil.com">
                 </div>
                 <div class="form-group">
                   <label for="phone">رقم التليفون</label>
@@ -236,7 +236,7 @@
     });
     $(document).on('click', '.toggle-passwordC', function () {
       $(this).toggleClass("fa-eye fa-eye-slash");
-      var input = $("#passConfirm");
+      var input = $("#cPass");
       input.attr('type') === 'password' ? input.attr('type', 'text') : input.attr('type', 'password')
     });
   </script>

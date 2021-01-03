@@ -1,0 +1,26 @@
+.faqSection{
+    padding-top: 4.8rem ;
+    background-color:#f7f8fe;
+}
+.bs-example{
+    margin: 20px;
+}
+.bs-example .accordion .card{
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.03);
+    border: solid 1px #e5eaf4;
+}
+.accordion .fa{
+    margin-right: 0.5rem;
+}
+.colorHeadFaq{
+    color: #ef106c;
+}
+.textFaq{
+    color: rgba(13, 36, 54, 0.8);
+}
+@media screen and (min-width:700px){
+    .bottomFooter{
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
