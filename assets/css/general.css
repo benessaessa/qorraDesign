@@ -28,12 +28,31 @@ a:hover{
 }
 .btn:hover {
   color: #4f4f4f;}
-nav .btn:hover{
-  color: #4f69ff; 
+
+nav .btn-navy:hover{
+   color: #ffffff;
+    box-shadow: 0 10px 10px 0 rgb(25 35 37);
+    background: #3E57E3;
+    border-bottom: 1px solid #3E57E3;
+}
+nav .btn-login:hover{
+   color: #ffffff;
+   box-shadow: 0 10px 10px 0 rgb(25 35 37);
+   background: #D1095B;
+   border-bottom: 1px solid #D1095B;
+}
+nav li a.btn-login, nav li a.btn-navy{
+  width: 110px;
+  justify-content: center;
+  margin: 0 10px 0 ;
+
+
 }
 nav li.nav-item .btn img{
   background: white;
   border-radius: 10px;
+  transition: all .2s ease-in-out;
+
 }
   
 header{
@@ -53,7 +72,7 @@ nav li{
 }
 nav li a{
   color: #ffffff;
-
+  border-bottom: 1px solid transparent;
 }
 nav .btn{
   height: 46px;
@@ -68,6 +87,22 @@ nav .btn{
   color: #ffffff;
   margin: 0 16px 1px;
 }
+a.btn-call svg rect{
+  fill: #f4f4f4;
+  opacity: 1;
+}
+a.btn-call:hover, .btn-lang:hover{
+  color: #fff;
+  border-radius: 0;
+}
+
+nav a.navbar-brand:hover{
+  border-bottom: 1px solid transparent;
+}
+nav a.navbar-brand{
+  border-bottom: 1px solid transparent;
+}
+
 nav .btn-lang{
   margin: 0;
 }
@@ -123,7 +158,7 @@ nav .btn-lang{
 }
 .nav-container{
   z-index: 99999 !important;
-
+  transition: all .2s ease-in-out;
 }
 .menuContainer{
   position: fixed;
@@ -192,8 +227,7 @@ nav.menu .dropdown-menu.show {
 .menu__list {
   margin: 0;
   padding: 0;
-  background: #343a40;
-  /*mix(black, $primary-color, 20); */
+  background: #e7e7ee;
   list-style-type: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
@@ -311,10 +345,42 @@ div.menu__brand--active {
 }
 
 
+.nav-fixed{
+  position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 1px 1px 0 rgb(25 35 37 / 6%)
+}
+.nav-fixed li a, .nav-fixed .btn{
+  color: rgba(13, 36, 54, 0.8)
+}
+.nav-fixed .btn-navy, .nav-fixed .btn-login{
+  color: white;
+}
 
+.nav-fixed li a:hover, .nav-fixed .btn:hover{
+   color: #4f69ff; 
+   border-bottom: 1px solid #3E57E3;
+}
+.nav-fixed .btn-navy:hover, .nav-fixed .btn-login:hover{
+  color: white;
+}
+.nav-fixed a.btn-call:hover svg rect{
+  fill: #4f69ff !important;
+  opacity: 1;
+}
+.nav-fixed a.btn-call:hover svg g{
+  stroke: #fff !important;
+}
+nav a:hover{
+  color: #fff; 
 
+  border-bottom: 1px solid #ffff;
 
-
+}
+.nav-fixed .btn-login:hover, .nav-fixed .btn-navy:hover{
+  box-shadow: 0 4px 4px 0 rgb(25 35 37 / 22%);
+}
 
 .topFooter{
   padding: 35px 0px;
@@ -411,6 +477,9 @@ color: #4460a0;
 
 
 @media (max-width: 500px){
+  .menu__link {
+    font-size: 20px;
+}
   .flex-direction-sm{
     flex-direction: column;
   }

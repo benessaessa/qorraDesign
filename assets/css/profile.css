@@ -1,0 +1,66 @@
+.btnProfile{
+    background-color: #e6e9ff;
+    color: #18191a !important;
+}
+.btnLogout{
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #ef106c !important;
+    border: solid 0.5px #ef106c;
+}
+.btnLogout:hover{
+    opacity: 0.8;
+}
+.profileSection{
+    background-color: #f7f8fe;
+}
+.tabsMenu{
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 3px 4px 0 rgba(153, 155, 168, 0.15);
+}
+.tabsMenu .nav-item .nav-link{
+    color: #18191a;
+    font-weight: 600;
+    padding: 1rem 0.5rem;
+}
+.tabsMenu .nav-item .nav-link.active{
+    color: #4f69ff;
+    background-color: #e9ecff;
+    border-radius: 0;
+    border-right:2px solid #4f69ff;
+}
+.btnChangePass{
+    border-radius: 10px;
+    color: white;
+    background-color: #4f69ff;
+}
+.btnChangePass:hover{
+    opacity: 0.8;
+    color: white;
+}
+.modal-backdrop {
+    z-index: 100000 !important;
+}
+.txtColor{
+    color:#4f69ff;
+}
+.modal {
+    z-index: 100001 !important;
+}
+@media screen and (min-width:700px){
+    .profileSection,.navbar,.bottomFooter{
+        padding-left: 5.5% !important;
+        padding-right: 5.5% !important;
+    }
+    .profileSection{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        min-height: 90vh;
+    }
+}
+@media screen and (max-width:700px){
+    .profileSection{
+        margin-top: 7rem;
+    }
+}

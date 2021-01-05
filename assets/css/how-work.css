@@ -1,0 +1,15 @@
+.howSection{
+    padding-top: 4.8rem ;
+    background-color:#f7f8fe;
+}
+@media screen and (max-width:600px){
+    .howSection{
+        padding-right: 1rem;
+    }
+}
+@media screen and (min-width:700px){
+    .howSection,.navbar,.bottomFooter{
+        padding-left: 5.5% !important;
+        padding-right: 5.5% !important;
+    }
+}

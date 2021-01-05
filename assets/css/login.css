@@ -1,6 +1,6 @@
 .btnLogin{
     color: white;
-    background-color: #1473d3;
+    background-color: #4f69ff;
 }
 .btnLogin:hover{
     background-color: white;
@@ -29,11 +29,11 @@
 }
 .modal-backdrop {
     z-index: 100000 !important;
-  }
+}
 
-  .modal {
+.modal {
     z-index: 100001 !important;
-  }
+}
 .newCheckbox .custom-control-input input {
     float: right;
 }
@@ -42,11 +42,11 @@
 }
 @media screen and (min-width:700px){
     .loginSection{
-        padding-right: 1.7%;
+        padding-right: 5.5%;
     }
-    .bottomFooter{
-        padding-left: 1.5%;
-        padding-right: 1.5%;
+    .navbar,.bottomFooter{
+        padding-left: 5.5% !important;
+        padding-right: 5.5% !important;
     }
     .bgWhite{
         background-color: white;
