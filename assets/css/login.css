@@ -3,8 +3,12 @@
     background-color: #4f69ff;
 }
 .btnLogin:hover{
-    background-color: white;
-    border-color: #1473d3;
+    color: white;
+    background: #3E57E3;
+    box-shadow: 0 4px 4px 0 rgb(25 35 37 / 22%);
+}
+.linkColor{
+color: #4f69ff;
 }
 .loginSection{
     padding-top: 4.8rem ;
@@ -62,5 +66,14 @@
     .loginSection{
         background-color: white;
         margin-left: 2rem;
+    }
+}
+@media screen and (max-width:320px){
+    .newCheckbox button{
+        font-size: 14px;
+    }
+    .newCheckbox .custom-control-label{
+        font-size: 14px;
+        padding-top: 1px;
     }
 }

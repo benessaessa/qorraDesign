@@ -1,26 +1,37 @@
 header .navbar,header{
     background-color: white;
     color: black;
+    box-shadow: 0 1px 1px 0 rgb(25 35 37 / 6%);
 }
 header .navbar-nav .nav-link,header .list-unstyled .nav-item:first-child .nav-link,header .list-unstyled .dropdown a{
     color: rgba(13, 36, 54, 0.8);
 }
 nav .btn-navy:hover{
-    background-color: white !important;
     border-color: #1473d3;
-    color: #1473d3;
-    box-shadow: none;
+    box-shadow: 0 4px 4px 0 rgb(25 35 37 / 22%);
 }
 .nav-button #nav-icon3 span{
     background-color: #1473d3;
 }
 nav .btn-login:hover{
-    background-color: white;
-    color: #ef106c;
+    color: white;
     border-color: #ef106c;
-    box-shadow: none;
+    box-shadow: 0 4px 4px 0 rgb(25 35 37 / 22%);
 }
-
+.navbar-nav .nav-item .nav-link:hover{
+    color: #4f69ff;
+    border-bottom: 1px solid #3E57E3;
+}
+.btn-call:hover{
+    color: #4f69ff !important;
+    border-bottom: 1px solid #3E57E3;
+}
+.menu__list{
+    background: #e7e7ee;
+}
+.menu__link{
+    color: rgba(13, 36, 54, 0.8) !important;
+}
 @media (max-width: 992px){
     .navbar-collapse.collapse.show ul a ,.list-unstyled .nav-item:first-child .nav-link{
         justify-content: center;

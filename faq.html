@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="assets/imgs/logo-blue.png">
+    <link rel="icon" href="assets/imgs/LOGO.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/hover.min.css" />
@@ -81,7 +81,7 @@
                     </ul>
                     <ul class="d-flex list-unstyled mb-0">
                         <li class="nav-item">
-                            <a class="nav-link btn  d-flex align-items-center" href="#">
+                            <a class="nav-link btn btn-call d-flex align-items-center" href="#">
                                 <img src="assets/imgs/phone-icon.png" class="mx-2" width="32px" height="32px" />
                                 201003453395+
                             </a>
@@ -296,59 +296,59 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
     <script src="assets/js/shap.js"></script>
     <script>
-        (function () {
-
-            var Menu = (function () {
-                var burger = document.querySelector('.burger');
-                var menu = document.querySelector('.menu');
-                var menuList = document.querySelector('.menu__list');
-                var menuContainer = document.querySelector('.nav-container');
-                var menuItems = document.querySelectorAll('.menu__item');
-
-                var active = false;
-
-                var toggleMenu = function () {
-                    if (!active) {
-                        menu.classList.add('menu--active');
-                        menuContainer.classList.add('menuContainer');
-                        menuList.classList.add('menu__list--active');
-
-                        burger.classList.add('burger--close');
-                        for (var i = 0, ii = menuItems.length; i < ii; i++) {
-                            menuItems[i].classList.add('menu__item--active');
-                        }
-
-                        active = true;
-                    } else {
-                        menu.classList.remove('menu--active');
-                        menuList.classList.remove('menu__list--active');
-                        menuContainer.classList.remove('menuContainer');
-                        burger.classList.remove('burger--close');
-                        for (var i = 0, ii = menuItems.length; i < ii; i++) {
-                            menuItems[i].classList.remove('menu__item--active');
-                        }
-
-                        active = false;
-                    }
-                };
-
-                var bindActions = function () {
-                    burger.addEventListener('click', toggleMenu, false);
-                };
-
-                var init = function () {
-                    bindActions();
-                };
-
-                return {
-                    init: init
-                };
-
-            }());
-
-            Menu.init();
-
+        (function() {
+        
+        var Menu = (function() {
+          var burger = document.querySelector('.burger');
+          var menu = document.querySelector('.menu');
+          var menuList = document.querySelector('.menu__list');
+          var menuContainer = document.querySelector('.nav-container');
+          var menuItems = document.querySelectorAll('.menu__item');
+          
+          var active = false;
+          
+          var toggleMenu = function() {
+            if (!active) {
+              menu.classList.add('menu--active');
+              menuContainer.classList.add('menuContainer');
+              menuList.classList.add('menu__list--active');
+      
+              burger.classList.add('burger--close');
+              for (var i = 0, ii = menuItems.length; i < ii; i++) {
+                menuItems[i].classList.add('menu__item--active');
+              }
+              
+              active = true;
+            } else {
+              menu.classList.remove('menu--active');
+              menuList.classList.remove('menu__list--active');
+              menuContainer.classList.remove('menuContainer');
+              burger.classList.remove('burger--close');
+              for (var i = 0, ii = menuItems.length; i < ii; i++) {
+                menuItems[i].classList.remove('menu__item--active');
+              }
+              
+              active = false;
+            }
+          };
+          
+          var bindActions = function() {
+            burger.addEventListener('click', toggleMenu, false);
+          };
+          
+          var init = function() {
+            bindActions();
+          };
+          
+          return {
+            init: init
+          };
+          
         }());
+        
+        Menu.init();
+        
+      }());
     </script>
     <script>
         $(document).ready(function () {

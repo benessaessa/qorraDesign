@@ -48,6 +48,9 @@
 .modal {
     z-index: 100001 !important;
 }
+.input-group-text,.newInputGroup input{
+    border-radius: 0;
+}
 @media screen and (min-width:700px){
     .profileSection,.navbar,.bottomFooter{
         padding-left: 5.5% !important;
