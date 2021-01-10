@@ -183,91 +183,103 @@
                         <div class="tab-pane active" id="profile">
                             <div class="card">
                                 <div class="card-body">
-                                    <h6 class="text-right text-muted pb-4">الملف الشخصي
-                                        <span class="float-left"><a class="text-dark" href="edit-profile.html">تعديل</a></span>
-                                    </h6>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <img src="assets/imgs/home/client.png"
-                                                class="rounded-circle ml-auto d-block" width="93" height="93" alt="">
-                                        </div>
-                                        <div class="col-md-3 text-right">
-                                            <p class="mb-2 pt-3">الاسم</p>
-                                            <h6 class="font-weight-bold">محمد أبو سليمان</h6>
-                                            <p class="mb-2 pt-3">رقم الهاتف</p>
-                                            <h6 class="font-weight-bold">01008270540</h6>
-                                        </div>
-                                        <div class="col-md-6 text-right">
-                                            <p class="mb-2 pt-3">البريد الالكتروني</p>
-                                            <h6 class="font-weight-bold">Mohamed@abosoliman.com</h6>
-                                        </div>
-                                    </div>
-                                    <button class="btn btnChangePass btn-block mt-4" data-toggle="modal"
-                                        data-target="#forgetPass">تغيير الرقم السري</button>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="forgetPass" tabindex="-1" role="dialog"
-                                        aria-labelledby="forgetPass" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header border-bottom-0">
-                                                    <h5 class="modal-title d-block font-weight-bold pt-1 txtColor text-right w-100"
-                                                        id="forgetPass">
-                                                        تغيير كلمة المرور
-                                                        <button type="button" class="close d-block float-left"
-                                                            data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </h5>
+                                    <form action="profile.html">
+                                        <h6 class="text-right text-muted pb-4">الملف الشخصي
+                                            <span class="float-left"><button type="submit" class="txtColor border-0 bg-white font-weight-bold">حفظ</button></span>
+                                        </h6>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img src="assets/imgs/home/client.png" id="changeImgEdit"
+                                                    class="rounded-circle ml-auto d-block" width="93" height="93" alt="">
+                                                <input id='fileidE' onchange="readURLEdit(this)" type='file' hidden/>
+                                                <button id='buttonid' type="button" class="btn mt-3 mx-auto d-block ">
+                                                    <img src="assets/imgs/camera.png" class="cameraButton" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="col-md-4 text-right">
+                                                <div class="form-group border formBg">
+                                                    <label class="pr-2 mb-0" for="name">الاسم</label>
+                                                    <input id="name" value="محمد أبو سليمان" class="txtColor border-0 mt-0 form-control" type="text">
                                                 </div>
-                                                <div class="modal-body pt-1 text-right">
-                                                    <form action="#">
-                                                        <label for="curentPass">كلمة المرور الحاليه</label>
-                                                        <div class="input-group newInputGroup mb-3">
-                                                            <input type="password" required
-                                                                class="form-control py-4 border-left-0"
-                                                                placeholder="**********" id="curentPass">
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text bg-white border-right-0"
-                                                                    id="basic-addon2">
-                                                                    <span toggle="#password-field"
-                                                                        class="fa fa-fw fa-eye field-icon cuurentPass"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <label for="fPass">كلمة المرور الجديدة</label>
-                                                        <div class="input-group newInputGroup mb-3">
-                                                            <input type="password" required
-                                                                class="form-control py-4 border-left-0"
-                                                                placeholder="**********" id="fPass">
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text bg-white border-right-0"
-                                                                    id="basic-addon2">
-                                                                    <span toggle="#password-field"
-                                                                        class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <label for="forgetPassConfirm"> تاكيد كلمة المرور الجديدة
-                                                        </label>
-                                                        <div class="input-group newInputGroup mb-3">
-                                                            <input type="password" required
-                                                                class="form-control py-4 border-left-0"
-                                                                placeholder="**********" id="forgetPassConfirm">
-                                                            <div class="input-group-append">
-                                                                <div class="input-group-text bg-white border-right-0"
-                                                                    id="basic-addon2">
-                                                                    <span toggle="#password-fieldC"
-                                                                        class="fa fa-fw fa-eye field-icon toggle-passwordC"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button
-                                                            class="btn btnChangePass font-weight-bold btn-block mt-3">تغيير</button>
-                                                    </form>
+                                                <div class="form-group border formBg">
+                                                    <label class="pr-2 mb-0" for="telephone">رقم الهاتف</label>
+                                                    <input id="telephone" value="01008270540" class="txtColor border-0 form-control" type="tel">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 text-right">
+                                                <div class="form-group formBg">
+                                                    <label class="pr-2 mb-0" for="email">البريد الالكتروني</label>
+                                                    <input id="email" value="Mohamed@abosoliman.com" class="txtColor border-0 form-control" type="email">
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <button class="btn btnChangePass btn-block mt-4" data-toggle="modal"
+                                            data-target="#forgetPass">تغيير الرقم السري</button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="forgetPass" tabindex="-1" role="dialog"
+                                            aria-labelledby="forgetPass" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header border-bottom-0">
+                                                        <h5 class="modal-title d-block font-weight-bold pt-1 txtColor text-right w-100"
+                                                            id="forgetPass">
+                                                            تغيير كلمة المرور
+                                                            <button type="button" class="close d-block float-left"
+                                                                data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="modal-body pt-1 text-right">
+                                                        <form action="#">
+                                                            <label for="curentPass">كلمة المرور الحاليه</label>
+                                                            <div class="input-group newInputGroup mb-3">
+                                                                <input type="password" required
+                                                                    class="form-control py-4 border-left-0"
+                                                                    placeholder="**********" id="curentPass">
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text bg-white border-right-0"
+                                                                        id="basic-addon2">
+                                                                        <span toggle="#password-field"
+                                                                            class="fa fa-fw fa-eye field-icon cuurentPass"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <label for="fPass">كلمة المرور الجديدة</label>
+                                                            <div class="input-group newInputGroup mb-3">
+                                                                <input type="password" required
+                                                                    class="form-control py-4 border-left-0"
+                                                                    placeholder="**********" id="fPass">
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text bg-white border-right-0"
+                                                                        id="basic-addon2">
+                                                                        <span toggle="#password-field"
+                                                                            class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <label for="forgetPassConfirm"> تاكيد كلمة المرور الجديدة
+                                                            </label>
+                                                            <div class="input-group newInputGroup mb-3">
+                                                                <input type="password" required
+                                                                    class="form-control py-4 border-left-0"
+                                                                    placeholder="**********" id="forgetPassConfirm">
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text bg-white border-right-0"
+                                                                        id="basic-addon2">
+                                                                        <span toggle="#password-fieldC"
+                                                                            class="fa fa-fw fa-eye field-icon toggle-passwordC"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button
+                                                                class="btn btnChangePass font-weight-bold btn-block mt-3">تغيير</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -693,6 +705,20 @@
             var input = $("#forgetPassConfirm");
             input.attr('type') === 'password' ? input.attr('type', 'text') : input.attr('type', 'password')
         });
+        document.getElementById('buttonid').addEventListener('click', openDialog);
+        function openDialog() {
+        document.getElementById('fileidE').click();
+        }
+        function readURLEdit(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#changeImgEdit')
+                        .attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
     </script>
 </body>
 

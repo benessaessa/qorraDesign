@@ -1,0 +1,23 @@
+.nav-fixed{
+    background-color: white;
+}
+.frameMap{
+    min-height: 100vh;
+}
+.form-select .form-control{
+    padding-top: 2px;
+}
+.form-select .form-control:focus{
+    background-color: #e5ebf7;
+    color: #4f69ff;
+}
+.arrowDowon{
+    position: absolute;
+    left: 1.5rem;
+    top: 0.8rem;
+}
+@media screen and (max-width:600px){
+    .searchSection{
+        padding-right: 1rem;
+    }
+}

@@ -1,0 +1,601 @@
+.nav-fixed{
+    background-color: white;
+}
+
+.breadcrumb{
+    margin-top: 5rem;
+    background-color: #ffffff
+}
+
+.breadcrumb h2{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    color: #18191a;
+}
+.breadcrumb h3{
+    font-size: 16px;
+    text-align: right;
+    color: rgba(13, 36, 54, 0.8);
+}
+.breadcrumb .h-100 img{
+    height: 62px;
+    width: 62px;
+}
+.breadcrumb ul li {
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: solid 0.5px rgba(0, 0, 0, 0.07);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.breadcrumb ul li:hover{
+    background: #f4f4f4;
+
+}
+.breadcrumb .hvr-ripple-out:hover:before {
+    border: .2px solid #e9ecff;
+}
+.compound-info {
+    background-color: #f7f8fe;
+    
+
+}
+.compound-info .nav-tabs{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 0;
+    border-radius: 18px;
+    max-width: 260px;
+    margin-top: 30px;
+    overflow: hidden;
+    box-shadow: 0 3px 4px 0 rgba(153, 155, 168, 0.15);
+
+}
+.compound-info .nav-tabs li{
+    text-align: right;
+}
+.compound-info .nav-tabs small{
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #18191a;
+    padding:  22px 20px 14px 20px;
+    display: block;
+
+}
+.compound-info .nav-tabs a{
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #18191a;
+    border: none;
+    padding: 12px 20px;
+}
+.compound-info .nav-tabs a:hover{
+    color: #4f69ff;
+    transition: all .2s ease-in-out;
+}
+.compound-info .nav-tabs a.nav-link.active{
+    color: #4f69ff;
+    border-radius: 2px;
+
+    background-color: #e9ecff;
+    border-right: 2px solid #4f69ff;
+
+}
+.compound-info .btn-pdf{
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #4f69ff;
+    width: 260px;
+    height: 46px;
+    float: right;
+    margin-top: 10px;
+    padding-bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    transition: all .2s ease-in-out;
+  
+}
+.compound-info .btn-pdf.hvr-ripple-out:before {
+    border: .2px solid #4f69ff;}
+.compound-info .btn-pdf:hover {
+    color: #f7f8ff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2)
+  
+  }
+.compound-info .tab-content{
+    margin-top: 30px;
+
+}
+
+.compound-info .tab-content .tab-pane > img{
+    border-radius: 10px;
+    height: 450px;
+    width: 100%;
+
+
+}
+.compound-info .video-wrapper {
+    position: relative;
+}
+
+.compound-info  .video-wrapper > video {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: fill;
+
+}
+
+.compound-info  .video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+    display: none;
+}
+
+.compound-info  .video-overlay-play-button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px calc(50% - 50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+     cursor: pointer;
+   
+}
+
+.compound-info  .video-overlay-play-button.is-hidden {
+    display: none;
+}
+
+  .compound-info .details{
+      margin-top: 30px;
+  }
+.compound-info .details p{
+    font-size: 16px;
+ 
+    text-align: right;
+    color: rgba(13, 36, 54, 0.6)
+}
+.compound-info .details .icon{
+    width: 48px;
+    height: 48px;
+
+    border-radius: 4px;
+    background-color: #4f69ff;
+}
+.compound-info .details .info p{
+    opacity: 0.83;
+    font-size: 14px;
+    text-align: right;
+    color: #18191a;
+}
+.compound-info .details .info span{
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: right;
+    color: #0d2436;
+}
+.compound-info .details .developer{
+    padding: 11px 20px 15px 68px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.compound-info .details .developer .description p {
+
+    border-right: solid 1px rgb(151 151 151 / 0.13);
+    padding-right: 15px;
+    padding: 15px 10px;
+
+}
+.compound-info .details .developer p{
+    font-size: 16px;
+    text-align: right;
+    color: rgba(13, 36, 54, 0.6);
+    margin-bottom: 0;
+
+}
+
+.list-items{
+    background-color: white;
+}
+.list-items ul li .icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #ef106c;
+
+}
+.list-items ul li:first-child .icon{
+    background-color: rgb(42 192 132 / 0.8);
+
+}
+.list-items ul li p{
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0d2436;
+}
+.list-items ul li span{
+    opacity: 0.83;
+     font-size: 14px;
+     
+    text-align: right;
+    color: #18191a;
+}
+.list-items .card-item .p-relative{
+    overflow: hidden;
+  }
+  .list-items .card-item img {
+  
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s  ease-in-out;
+  }
+
+.list-items .card-item{
+    max-width: 360px;
+    /* text-align: center; */
+    font-size: 18px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 3px 4px 0 rgba(153, 155, 168, 0.15);
+    height: auto;
+
+    cursor: auto;
+  
+  }
+  .list-items .card-item:hover .p-relative img, .samillerProjects ul li:hover img {
+	-webkit-transform: rotate(0) scale(1.1);
+	transform: rotate(1deg) scale(1.09);
+}
+
+.list-items .card-item:hover{
+  box-shadow: 0 8px 23px 0 rgba(153, 155, 168, 0.25)
+}
+.list-items .filters button{
+    border-radius: 8px;
+    border: solid 1px #ede8e9;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3a3335;
+    transition: all .2s ease-in-out;
+  
+}
+.list-items .filters  .hvr-ripple-out:before {
+    border: .2px solid #f7f8fe;}
+.list-items .filters button:hover{
+    background-color: #4f69ff;
+    color: white;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    border-color: #4f69ff;
+}
+.list-items .hvr-ripple-out:hover:before  {
+    border: .2px solid #4f69ff;
+}
+.list-items .filters button.active{
+    background-color: #4f69ff;
+    color: white;
+}
+.list-items .filters  .hvr-ripple-out.active:before {
+    border: .2px solid #4f69ff;
+
+}
+#flats .mix {
+    display: none ;
+  }
+.samillerProjects{
+    background-color: #edeff7;
+
+}
+.samillerProjects h2{
+    font-size: 40px;
+     font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #18191a;
+}
+.samillerProjects ul li{
+    margin: 0 5px;
+}
+.samillerProjects ul li img{
+    max-height: 260px;
+    height: 260px;
+    width: 260px;
+    transition: all .2s ease-in-out;
+}
+.samillerProjects ul li:first-child{
+    margin: 0;
+}
+.most-viewed .list-money li{
+    height: auto;
+}
+
+@media (max-width: 1000px){
+    .breadcrumb h2 {
+        font-size: 24px;}
+    .breadcrumb h3 {
+        font-size: 14px;}
+    .breadcrumb ul li {
+        width: 40px;
+        height: 40px;}
+    .breadcrumb ul li img{
+            width: 20;
+            height: 24px;}
+    .compound-info .btn-pdf{
+        width: auto;
+    }
+    .compound-info .details .info p{
+        font-size: 12px;
+    }
+    .compound-info .details .info span{
+        font-size: 14px;
+    }
+    .compound-info .details .icon {
+        width: 35px;
+        height: 35px;
+    }
+    .compound-info .details .icon img {
+        width: 15px;
+        height: 15px;
+    }
+    .compound-info .details .info{
+        padding: 0 10px !important;
+    }
+    .compound-info .details .developer p{
+        font-size: 14px;
+
+    }
+    .compound-info .details .developer img{
+        width: 95px;
+        height: 35px;
+    }
+    
+    .list-items .card-item {
+        max-width: 300px;
+        margin: 10px auto;
+
+    }
+    .samillerProjects ul li img{
+        width: 200px;
+        height: 200px;
+
+    }
+}
+
+@media (max-width:990px){
+   .compound-info  .details ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .compound-info .details .developer {
+        padding: 11px 20px 15px 11px;}
+}
+
+@media (max-width:770px){
+    .breadcrumb .justify-content-end{
+        justify-content: center !important;
+    }
+    .breadcrumb ul li, .breadcrumb ul{
+        margin: 0;
+    }
+    .breadcrumb .d-inline-flex.h-100.align-items-center{
+        height: auto !important;
+
+    }
+    .breadcrumb h2 {
+        font-size: 21px;}
+    .breadcrumb h3 {
+        font-size: 13px;}
+    .breadcrumb .row >div {
+        display: flex;
+
+    }
+    .compound-info .details .developer .description p{
+        border: none;
+    }
+    
+    .compound-info .nav-tabs{
+        margin: 15px auto;
+        max-width: inherit;
+
+
+    }
+    .compound-info .btn-pdf{
+        float: inherit;
+
+    }
+.list-items .card-item {
+    max-width: 250px;}
+    .most-viewed .info-list ul {
+        grid-template-columns: auto auto;}
+   .card-item  .pr-4.pl-4{
+       padding: 0 10px !important;
+   }
+   .card-item .info .pl-3{
+    padding-left: 5px !important;
+
+   }
+
+   .samillerProjects h2 {
+    font-size: 28px;
+   }
+   .samillerProjects ul li img{
+    width: 150px;
+    height: 150px;
+
+}
+
+
+}
+
+@media (max-width:550px){
+    .compound-info .nav-tabs{
+        flex-direction: row;
+
+    }
+    .compound-info .nav-tabs li{
+        display: flex;
+
+    }
+    .compound-info .nav-tabs li small{ 
+        display: none;
+
+    }
+    .compound-info .nav-tabs li.attachments-sm{
+        display: flex !important;
+        width: 100%;
+    }
+     .compound-info .nav-tabs li.attachments-sm small{ 
+        padding: 5px 10px;
+
+        display: flex ;
+    }
+
+    .compound-info .nav-tabs a{
+        padding: 12px ;
+        display: flex;
+        align-items: center;
+    }
+    .compound-info .tab-content .tab-pane > img,   .compound-info .tab-content .tab-pane video{
+        height: 300px ;
+    }
+    .samillerProjects ul  {  
+        display: flex;
+    }
+    .list-items .card-item{
+        max-width: initial;
+    }
+    .most-viewed .list-money{
+        height: auto;
+
+    }
+    .breadcrumb .justify-content-end{
+        justify-content: flex-start!important;
+        padding-right: 17%;
+    }
+}
+@media (max-width: 500px){
+.breadcrumb h2 {
+    font-size: 18px;
+    margin-right: 5px;
+}
+.breadcrumb h3 {
+    font-size: 12px;
+    margin-right: 5px;
+}
+.breadcrumb ul li img {
+    width: 17px;
+    height: 21px;
+}
+.breadcrumb .justify-content-end{
+    padding-right: 24%;
+}
+.list-items ul li .icon {
+    width: 35px;
+    height: 35px;}
+    .list-items ul li .icon   img{
+        width: 15px;
+        height: 16px;
+    }
+    .list-items ul li p,      .list-items ul li span{
+        font-size: 12px;}
+        
+.samillerProjects ul li img {
+    width: 115px;
+    height: 115px;
+}
+.samillerProjects ul.list-unstyled.mt-5.text-right.px-0.pb-5.pt-3 {
+    margin: 10px 0 !important;
+    padding: 10px 0 !important;
+}
+.samillerProjects ul.list-unstyled.mt-5.text-right.px-0.pb-5.pt-3{
+    text-align: center !important;
+}
+}
+
+@media (max-width:470px){
+    .breadcrumb ul li {
+        width: 36px;
+        height: 36px;
+        margin-right: 0;}
+        .breadcrumb h2 {
+        font-size: 16px;}
+        .breadcrumb .h-100 img {
+            height: 50px;
+            width: 50px;
+            margin-left: 30px !important;
+        }
+        .compound-info .details .info{
+            width: 120px;
+
+        }
+}
+@media (max-width: 440px){
+.breadcrumb h2 {
+    font-size: 14px;
+}
+.filters{
+    text-align: center !important;
+}
+.list-items .filters button{
+    margin: 5px !important ;
+}
+
+}
+@media (max-width: 430px){
+
+.flats-info .info{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+.list-items ul li .icon {
+    width: 30px;
+    height: 30px;
+}}
+
+@media (max-width: 370px){
+.breadcrumb ul li {
+    width: 34px;
+    height: 34px;
+}
+.samillerProjects ul li img {
+    width: 95px;
+    height: 95px;
+}
+
+}

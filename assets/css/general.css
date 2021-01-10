@@ -362,6 +362,10 @@ div.menu__brand--active {
    color: #4f69ff; 
    border-bottom: 1px solid #3E57E3;
 }
+.nav-fixed .btn-login:hover{
+  border-bottom: 1px solid #d1095b;
+
+}
 .nav-fixed .btn-navy:hover, .nav-fixed .btn-login:hover{
   color: white;
 }

@@ -45,7 +45,6 @@ form .btn{
 header form .btn-block:hover {
   color: #f7f8ff;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2)
- 
 
 }
 header .col-info{
@@ -624,6 +623,7 @@ margin-top: 15px;
   display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   
 }
 .most-viewed .list-money li{
@@ -638,6 +638,7 @@ margin-top: 15px;
   font-weight: bold;
   color: rgba(13, 36, 54, 0.6);
   display: inherit;
+  text-align: center;
 
 
 }
