@@ -1,0 +1,113 @@
+.nav-fixed{
+    background-color: white;
+}
+.property-details{
+    padding-top: 6.5rem;
+}
+.btnImage{
+    background-color: white;
+    border: solid 0.5px rgba(0, 0, 0, 0.07);
+    padding: 13px 13px 12px;
+    border-radius: 10px;
+}
+.btnIntrest{
+    padding: 13px 31px 12px 32px;
+    border-radius: 10px;
+    background-color: #4f69ff;
+    color: white;
+    font-weight: bold;
+}
+.btnIntrest:hover{
+    color: white;
+    box-shadow: 0 4px 4px 0 rgb(25 35 37 / 22%);
+    border-bottom: 1px solid #3E57E3;
+    background: #3E57E3;
+}
+.akarDetail{
+    background-color: #f7f8fe;
+    padding-top: 1rem;
+}
+.cardPay{
+    border-radius: 18px;
+    box-shadow: 0 3px 4px 0 rgba(153, 155, 168, 0.15);
+}
+.cardPay .nav-pills{
+    padding-right: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    border-radius: 18px;
+    font-weight: bold;
+}
+.cardPay .nav-pills .nav-item .nav-link{
+    color: rgba(13, 36, 54, 0.6);
+}
+.cardPay .nav-pills .nav-item .nav-link.active{
+    color: #4f69ff;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.cardPay .nav-pills .nav-item{
+    width: 50%;
+}
+.listPay .list-group{
+    padding-right: 0;
+}
+.listPay .list-group .list-group-item{
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+}
+.most-viewed .info-list{
+    margin-bottom: 0;
+}
+.modal-backdrop {
+    z-index: 100000 !important;
+}
+.modal {
+    z-index: 100001 !important;
+}
+.panel-heading{
+    cursor: pointer;
+}
+.panel-title {
+    position: relative;
+}
+    
+.panel-title::after {
+    content: "\f107";
+    color: #333;
+    top: -2px;
+    left: 0px;
+    position: absolute;
+    font-family: "FontAwesome"
+}
+
+.panel-title[aria-expanded="true"]::after {
+    content: "\f106";
+}
+
+    /*
+    * Added 12-27-20 to showcase full title clickthrough
+    */
+
+.panel-heading-full.panel-heading {
+    padding: 0;
+}
+
+.panel-heading-full .panel-title {
+    padding: 10px 15px;
+}
+
+.panel-heading-full .panel-title::after {
+    top: 10px;
+    right: 15px;
+}
+.doors .nav-item .nav-link{
+    color: black;
+}
+.doors .nav-item .nav-link.active{
+    border-radius: 13px;
+    background-color: #ebebf1;
+    color: #18191a;
+}
