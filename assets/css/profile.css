@@ -129,3 +129,12 @@
         margin-top: 7rem;
     }
 }
+@media (max-width: 500px){
+    .most-viewed .info-list ul {
+        display: block;
+        column-gap: 10px;
+    }
+    .most-viewed .info-list ul li:last-child{
+        padding-top: 0.5rem;
+    }
+}

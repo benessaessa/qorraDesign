@@ -1,5 +1,51 @@
+.txtSmall{
+    font-size: 14px;
+}
+.txtMenuPay{
+    color: #4f69ff;
+    text-align: center;
+    font-weight: bold;
+}
 .nav-fixed{
     background-color: white;
+}
+.carousel-control-next-icon{
+    /* background-color: white; */
+    right: -10px;
+    background-image: url(../imgs/arrowRight.PNG);
+    opacity: 1;
+    width: 40px;
+    border-radius: 10px;
+    box-shadow: 0 32px 96px -8px rgba(0, 0, 0, 0.69);
+    height: 40px;
+    position: absolute;
+}
+.carousel-control-prev-icon{
+    /* background-color: white; */
+    left: -10px;
+    background-image: url(../imgs/arrowLeft.PNG);
+    opacity: 1;
+    width: 40px;
+    border-radius: 10px;
+    box-shadow: 0 32px 96px -8px rgba(0, 0, 0, 0.69); 
+    height: 40px;
+    position: absolute;
+}
+.newSlider .carousel-item img{
+    min-height: 695px;
+    max-height: 700px;
+    object-fit: cover;
+}
+.planTabs .nav-item .nav-link{
+    color: #18191a;
+    border-radius: 13px;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #edeef5;      
+}
+.planTabs .nav-item .nav-link.active{
+    background-color: #ef106c;
+    color: white;
 }
 .property-details{
     padding-top: 6.5rem;
@@ -82,7 +128,6 @@
     position: absolute;
     font-family: "FontAwesome"
 }
-
 .panel-title[aria-expanded="true"]::after {
     content: "\f106";
 }
@@ -110,4 +155,68 @@
     border-radius: 13px;
     background-color: #ebebf1;
     color: #18191a;
+}
+.minHeightImage{
+    min-height: 161px;
+    max-height: 201px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.video-wrapper {
+    position: relative;
+}
+
+.video-wrapper > video {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: fill;
+    height: 340px;
+    margin-bottom: 1rem;
+}
+
+.video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+    display: none;
+}
+
+.video-overlay-play-button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px calc(50% - 50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+     cursor: pointer;
+   
+}
+
+.video-overlay-play-button.is-hidden {
+    display: none;
+}
+.textService{
+    color: rgba(13, 36, 54, 0.8);
+}
+.listService{
+    padding-right: 0;
+}
+.listService .list-group-item{
+    background-color: unset;
+    border: 0;
+    padding-right: 0;
+}
+.discount{
+    background-color: #fddfaa;
+    color: #ffab1d;
+    margin-top: 1rem;
+    border-radius: 8px;
+    padding: 4px 59px 0px 49px;
+}
+@media screen and (max-width:780px){
+    .newSlider .carousel-item img{
+        min-height: 300px;
+    }
 }
