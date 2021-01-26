@@ -6,6 +6,7 @@
   <link rel="icon" href="assets/imgs/LOGO.png">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="assets/css/hover.min.css" />
   <link rel="stylesheet" href="assets/css/aos.css" />
   <link rel="stylesheet" href="assets/css/general.css">
@@ -143,7 +144,7 @@
       </nav>
     </div>
   </header>
-  <section class="most-viewed bg-white searchSection pt-5 pb-2 aos-init aos-animate" data-aos="fade-up"
+  <section class="most-viewed bg-white searchSection pt-5 pb-2 aos-init aos-animate filterSection" data-aos="fade-up"
     data-aos-anchor-placement="top-bottom">
     <div class="container">
       <div class="row pt-5 mt-2 formsControl bg-white">
@@ -190,19 +191,208 @@
           </div>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-4">
-          <p class="text-left pt-2">  بحث متقدم <img src="assets/imgs/arrowLeft.PNG" width="35" class="arrowAngle" alt=""></p>
+          <p class="text-left pt-2 font-weight-bold advanceSearch">  بحث متقدم <img src="assets/imgs/arrowLeft.PNG" width="35" class="arrowAngle" alt=""></p>
         </div>
       </div>
     </div>
   </section>
-  <section class="bg-white alarmMenu">
+  <section class="bg-white alarmMenu newSerchAdv">
+    <div class="container text-right py-3">
+      <div class="row pb-3">
+        <div class="col-md-7">
+          <h5 class="newTextColor font-weight-bold">بحث متقدم </h5>
+        </div>
+        <div class="col-md-5 text-left">
+          <button class="btn btnDel mx-3">  مسح <span class="badge badge-primary">2</span></button>
+          <button class="btn btnApp">تطبيق</button>
+          <span class="float-left pt-1 closeTime mr-3"><img src="assets/imgs/close.PNG" alt=""></span>
+        </div>
+      </div>
+      <div class="row filterOptions pt-3">
+        <div class="col-lg-3 col-md-6">
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">نوع العقار</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>استديو</option>
+              <option>استديو</option>
+              <option>استديو</option>
+              <option>استديو</option>
+            </select>
+          </div>
+          <div class="panel-group" id="accordion">
+
+            <!-- First Panel -->
+            <div class="panel panel-default bg-white rounded">
+              <div class="panel-heading pt-3">
+                <h6 class="panel-title font-weight-bold" data-toggle="collapse" data-target="#collapseOne">الموقع</h6>
+              </div>
+              
+              <div id="collapseOne" class="panel-collapse collapse show">
+                <div class="panel-body pt-2 pr-0">
+                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                    <input type="checkbox" class="custom-control-input float-right" id="myCheckBox">
+                    <label class="custom-control-label" for="myCheckBox">مدينتي</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                    <input type="checkbox" class="custom-control-input float-right" id="helioplis">
+                    <label class="custom-control-label" for="helioplis">هليوبليس</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                    <input type="checkbox" class="custom-control-input float-right" id="tagamoe">
+                    <label class="custom-control-label" for="tagamoe">التجمع الخامس</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                    <input type="checkbox" class="custom-control-input float-right" id="katamy">
+                    <label class="custom-control-label" for="katamy">القطاميه</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                    <input type="checkbox" class="custom-control-input float-right" id="sheck">
+                    <label class="custom-control-label" for="sheck">الشيخ زايد</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <label>المساحه</label>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <select id="inputState" class="form-control">
+                  <option selected>من</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <select id="inputState" class="form-control">
+                  <option selected>الي</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <label>السعر الكلي</label>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <select id="inputState" class="form-control">
+                  <option selected>من</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <select id="inputState" class="form-control">
+                  <option selected>الي</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="numbRooms">عدد الغرف</label>
+            <select id="numbRooms" class="form-control">
+              <option selected>عدد الغرف</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="tashteeb">نوع التشطيب</label>
+            <select id="tashteeb" class="form-control">
+              <option selected>لوكس</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="view">المنظر</label>
+            <select id="view" class="form-control">
+              <option selected>حديقه</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <label>يمكنني تحمل دفعة أولى بقيمة</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend border-left-0">
+              <span class="input-group-text bg-white" id="basic-addon2">الحد الاقصي</span>
+            </div>
+            <input type="text" class="form-control border-right-0" dir="rtl" placeholder=" 5000 جم" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          </div>
+          <div class="form-group">
+            <label for="years"> عدد سنين التقسيط</label>
+            <select id="years" class="form-control">
+              <option selected> 1 </option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="numbBaths">  عدد الحمامات </label>
+            <select id="numbBaths" class="form-control">
+              <option selected> 1 </option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="collects">  المجمع  </label>
+            <select id="collects" class="form-control">
+              <option selected> la vista </option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="morfqat">  المرافق  </label>
+            <select id="morfqat" class="form-control">
+              <option selected> غاز طبيعي </option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <label>الأقساط التي استطيع دفعها شهريًا</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend border-left-0">
+              <span class="input-group-text bg-white" id="basic-addon2">الحد الاقصي</span>
+            </div>
+            <input type="text" class="form-control border-right-0" dir="rtl" placeholder=" 5000 جم" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          </div>
+          <div class="form-group">
+            <label for="deadTime">  سنة التسليم </label>
+            <select id="deadTime" class="form-control">
+              <option selected> 1 </option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="floorN"> الطابق  </label>
+            <select id="floorN" class="form-control">
+              <option selected> 1 </option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="developer">  المطور </label>
+            <select id="developer" class="form-control">
+              <option selected> اعمار مصر </option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white alarmMenu willHide notifications">
     <div class="container text-right py-3">
       <h5 class="newTextColor font-weight-bold">قوائم التنبيهات 
-        <span class="float-left"><img src="assets/imgs/close.PNG" alt=""></span>
+        <span class="float-left closeNotifications"><img src="assets/imgs/close.PNG" alt=""></span>
       </h5>
     </div>
   </section>
-  <section class="most-viewed mt-2 aos-init aos-animate bg-white" data-aos="fade-up"
+  <section class="most-viewed mt-2 aos-init aos-animate willHide bg-white" data-aos="fade-up"
     data-aos-anchor-placement="top-bottom">
     <div class="container">
       <div class="row justify-content-between pb-4">
@@ -672,6 +862,11 @@
             allowSlideNext: true
           },
           700:{
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loopedSlides: 4,
+          },
+          1000:{
             slidesPerView: 3,
             spaceBetween: 30,
             loopedSlides: 4,
@@ -683,49 +878,6 @@
           }
         },
 
-      });
-
-      var swiper3 = new Swiper('.testimonials .swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 40,
-        loopedSlides: 1,
-        navigation: {
-          nextEl: '.testimonials .swiper-button-next',
-          prevEl: '.testimonials .swiper-button-prev',
-        },
-        breakpoints: {
-          300: {
-            mousewheel: true,
-            keyboard: true,
-            slidesPerView: 1,
-            spaceBetween: 24,
-            allowSlidePrev: true,
-            allowSlideNext: true,
-            loopedSlides: 1,
-          },
-          400: {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            allowSlidePrev: true,
-            allowSlideNext: true,
-            loopedSlides: 1,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            loopedSlides: 1,
-            allowSlidePrev: true,
-            allowSlideNext: true
-          }
-        }
-
-      });
-      //Reload swiper
-      $(window).resize(function () {
-        swiper3.update();
-      });
-      $(window).on('load', function () {
-        swiper3.update();
       });
 
     </script>
@@ -787,6 +939,21 @@
         Menu.init();
 
       }());
+      $(document).ready(function(){
+        $('.advanceSearch').click(function(){
+          $('.willHide').css("display","none");
+          $('.filterSection').css("display","none");
+          $('.newSerchAdv').css({"margin-top":"5.5rem","display":"block"});
+        });
+        $('.closeTime').click(function(){
+          $('.newSerchAdv').css("display","none");
+          $('.filterSection').css("display","block");
+          $('.willHide').css("display","block");
+        });
+        $('.closeNotifications').click(function(){
+          $('.willHide').css("display","none");
+        });
+      });
     </script>
   </footer>
 </body>

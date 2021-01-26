@@ -107,12 +107,6 @@
 .most-viewed .info-list{
     margin-bottom: 0;
 }
-.modal-backdrop {
-    z-index: 100000 !important;
-}
-.modal {
-    z-index: 100001 !important;
-}
 .panel-heading{
     cursor: pointer;
 }
@@ -215,6 +209,15 @@
     border-radius: 8px;
     padding: 4px 59px 0px 49px;
 }
+.modal-backdrop {
+    z-index: 100000 !important;
+}
+.modal {
+    z-index: 100001 !important;
+}
+.modal {
+    overflow-y:auto;
+  }
 @media screen and (max-width:780px){
     .newSlider .carousel-item img{
         min-height: 300px;
