@@ -1,6 +1,12 @@
 .nav-fixed{
     background-color: white;
 }
+.newTextColor{
+    color: #4f69ff;
+}
+.newTextColor span i{
+    color: gray;
+}
 .frameMap{
     min-height: 100vh;
 }
@@ -16,8 +22,73 @@
     left: 1.5rem;
     top: 0.8rem;
 }
+.formsControl .form-control{
+    height: 51px;
+    border-radius: 10px;
+}
+.formsControl .form-control:focus,.formsControl .form-control:visited{
+    background-color: #e5ebf7;
+}
+.areaDimentions .form-control{
+    border-radius: 0;
+}
+.lastInput{
+    border-radius: 10.5px 0px 0px 10.5px !important;
+}
+.areaDimentions .input-group-text{
+    border-radius: 0px 10.5px 10.5px 0px !important;
+}
+.most-viewed .swiper-container {
+    padding-bottom: 35px;
+}
+.arrowAngle{
+    transform: rotate(270deg); 
+}
+.alarmMenu , .searchSection{
+    box-shadow: 0 1px 1px 0 rgb(25 35 37 / 6%);
+}
+.alarmBox{
+    background-color: #f4f4f6;
+}
+.alarmBox small{
+    color:rgb(0 0 0);
+    font-size: 14px;
+    font-weight: bold;
+}
+.most-viewed .swiper-button-next {
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    width: 40px;
+    right: -15px;
+    top: 63px;
+    height: 40px;
+    background-color: #4f69ff;
+}
+.most-viewed .swiper-button-prev {
+    border-radius: 50%;
+    opacity: 1;
+    position: absolute;
+    width: 40px;
+    left: -15px;
+    top: 63px;
+    height: 40px;
+    background-color: #4f69ff;
+}
 @media screen and (max-width:600px){
     .searchSection{
         padding-right: 1rem;
+    }
+    .most-viewed .swiper-button-prev,.most-viewed .swiper-button-next{
+        position: relative;
+        left: unset;
+        right: unset;
+        top: 20px;
+    }
+}
+@media (max-width: 400px){
+    .most-viewed .info-list ul {
+        column-gap: 10px;
+        display: block !important;
     }
 }

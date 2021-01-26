@@ -143,11 +143,11 @@
       </nav>
     </div>
   </header>
-  <section class="most-viewed searchSection py-5  aos-init aos-animate" data-aos="fade-up"
+  <section class="most-viewed bg-white searchSection pt-5 pb-2 aos-init aos-animate" data-aos="fade-up"
     data-aos-anchor-placement="top-bottom">
     <div class="container">
-      <div class="row pt-5 mt-2">
-        <div class="col-lg-2">
+      <div class="row pt-5 mt-2 formsControl bg-white">
+        <div class="col-xl-2 col-lg-3 col-md-4">
           <div class="form-group form-select">
             <select class="form-control px-2" name="">
               <option>استديو</option>
@@ -155,22 +155,24 @@
             </select>
           </div>
         </div>
-        <div class="col-lg-2">
-          <div class="form-group multiple">
-            <div class='c-filter w-100'>
-              <button class='c-filter__toggle form-control text-right'>آين ستنتقل؟</button>
-              <ul class='c-filter__ul w-100'>
-                <li class='c-filter__item'><input name="place[]" value="القاهرة" type='checkbox' id='1'><label tabindex='-1' for='1'>القاهرة</label></li>
-                <li class='c-filter__item'><input name="place[]"  value="الجيزة" type='checkbox' id='2'><label tabindex='-1' for='2'> الجيزة</label></li>
-                <li class='c-filter__item'><input name="place[]"  value="اكتوبر" type='checkbox' id='3'><label tabindex='-1' for='3'>اكتوبر</label></li>
-                <li class='c-filter__item'><input name="place[]"  value="المنيا" type='checkbox' id='4'><label tabindex='-1' for='4'>المنيا</label></li>
-              </ul>
-              
-            </div>
-            <i class="fas fa-chevron-down arrowDowon"></i>
+        <div class="col-xl-2 col-lg-3 col-md-4">
+          <div class="form-group form-select">
+            <select class="form-control px-2" name="">
+              <option>الموقع</option>
+              <option>edit</option>
+            </select>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-xl-2 col-lg-3 col-md-4 pb-3">
+          <div class="input-group areaDimentions">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-white px-2">المساحه</span>
+            </div>
+            <input type="text" aria-label="First name" placeholder="من" class="form-control px-1 text-center">
+            <input type="text" aria-label="Last name" placeholder="إلي" class="form-control lastInput px-1 text-center">
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-md-4">
           <div class="input-group mb-3" dir="ltr">
             <input type="text" class="form-control border-right-0" dir="rtl" placeholder=" 5000 جم" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append border-left-0">
@@ -178,7 +180,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-xl-2 col-lg-3 col-md-4">
           <div class="form-group form-select">
             <select class="form-control px-2" name="">
               <option>القسط الشهري</option>
@@ -187,7 +189,118 @@
             </select>
           </div>
         </div>
+        <div class="col-xl-2 col-lg-3 col-md-4">
+          <p class="text-left pt-2">  بحث متقدم <img src="assets/imgs/arrowLeft.PNG" width="35" class="arrowAngle" alt=""></p>
+        </div>
       </div>
+    </div>
+  </section>
+  <section class="bg-white alarmMenu">
+    <div class="container text-right py-3">
+      <h5 class="newTextColor font-weight-bold">قوائم التنبيهات 
+        <span class="float-left"><img src="assets/imgs/close.PNG" alt=""></span>
+      </h5>
+    </div>
+  </section>
+  <section class="most-viewed mt-2 aos-init aos-animate bg-white" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+    <div class="container">
+      <div class="row justify-content-between pb-4">
+        <div class="pagination-container col-12">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <img src="assets/imgs/home/icon-arrow-left.svg" width="17px" />
+          </div>
+          <div class="swiper-button-next">
+            <img src="assets/imgs/home/icon-arrow-right.svg" width="17px" />
+          </div>
+        </div>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <div class="pr-4 pl-4 alarmBox">
+              <div class="info d-flex py-2">
+                <div class="w-100">
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية 
+                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  </p>
+                  <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pr-4 pl-4 alarmBox">
+              <div class="info d-flex py-2">
+                <div class="w-100">
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية 
+                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  </p>
+                  <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pr-4 pl-4 alarmBox">
+              <div class="info d-flex py-2">
+                <div class="w-100">
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية 
+                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  </p>
+                  <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pr-4 pl-4 alarmBox">
+              <div class="info d-flex py-2">
+                <div class="w-100">
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية 
+                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  </p>
+                  <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pr-4 pl-4 alarmBox">
+              <div class="info d-flex py-2">
+                <div class="w-100">
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية 
+                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  </p>
+                  <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="pr-4 pl-4 alarmBox">
+              <div class="info d-flex py-2">
+                <div class="w-100">
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية 
+                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  </p>
+                  <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+  </section>
+  <section class="most-viewed searchSection py-5  aos-init aos-animate" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+    <div class="container">
       <div class="row">
         <div class="col-md-4">
           <div class="swiper-slide mb-3">
@@ -523,48 +636,6 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.compounds .swiper-container', {
-
-
-        slidesPerView: 'auto',
-
-        freeMode: true,
-        loop: true,
-
-        autoplay: {
-          delay: 5000,
-          stopOnLastSlide: false
-        },
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loopedSlides: 1,
-        breakpoints: {
-          300: {
-
-            slidesPerView: 1,
-            spaceBetween: 24,
-
-            loopedSlides: 1,
-          },
-          400: {
-            slidesPerView: 1,
-            spaceBetween: 24,
-
-            loopedSlides: 1,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            loopedSlides: 1,
-
-          },
-          1200: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            loopedSlides: 1,
-          }
-        }
-      });
       var swiper2 = new Swiper('.most-viewed .swiper-container', {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -600,8 +671,13 @@
             allowSlidePrev: true,
             allowSlideNext: true
           },
-          1200: {
+          700:{
             slidesPerView: 3,
+            spaceBetween: 30,
+            loopedSlides: 4,
+          },
+          1200: {
+            slidesPerView: 4,
             spaceBetween: 30,
             loopedSlides: 4,
           }

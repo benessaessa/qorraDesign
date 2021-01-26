@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/hover.min.css" />
     <link rel="stylesheet" href="assets/css/aos.css" />
     <link rel="stylesheet" href="assets/css/general.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/shap.css">
     <link rel="stylesheet" href="assets/css/profile.css">
@@ -190,7 +190,7 @@
                                         <div class="row">
                                             <div class="col-md-3">
                                                 <img src="assets/imgs/home/client.png" id="changeImgEdit"
-                                                    class="rounded-circle ml-auto d-block" width="93" height="93" alt="">
+                                                    class="rounded-circle ml-auto mr-auto d-block" width="93" height="93" alt="">
                                                 <input id='fileidE' onchange="readURLEdit(this)" type='file' hidden/>
                                                 <button id='buttonid' type="button" class="btn mt-3 mx-auto d-block ">
                                                     <img src="assets/imgs/camera.png" class="cameraButton" alt="">
@@ -199,87 +199,87 @@
                                             <div class="col-md-4 text-right">
                                                 <div class="form-group border formBg">
                                                     <label class="pr-2 mb-0" for="name">الاسم</label>
-                                                    <input id="name" value="محمد أبو سليمان" class="txtColor border-0 mt-0 form-control" type="text">
+                                                    <input id="nameE" required value="محمد أبو سليمان" class="txtColor border-0 mt-0 form-control" type="text">
                                                 </div>
                                                 <div class="form-group border formBg">
                                                     <label class="pr-2 mb-0" for="telephone">رقم الهاتف</label>
-                                                    <input id="telephone" value="01008270540" class="txtColor border-0 form-control" type="tel">
+                                                    <input type="tel" id="telephone" value="01234567891" required class="txtColor border-0 form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-5 text-right">
                                                 <div class="form-group formBg">
                                                     <label class="pr-2 mb-0" for="email">البريد الالكتروني</label>
-                                                    <input id="email" value="Mohamed@abosoliman.com" class="txtColor border-0 form-control" type="email">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button class="btn btnChangePass btn-block mt-4" data-toggle="modal"
-                                            data-target="#forgetPass">تغيير الرقم السري</button>
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="forgetPass" tabindex="-1" role="dialog"
-                                            aria-labelledby="forgetPass" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header border-bottom-0">
-                                                        <h5 class="modal-title d-block font-weight-bold pt-1 txtColor text-right w-100"
-                                                            id="forgetPass">
-                                                            تغيير كلمة المرور
-                                                            <button type="button" class="close d-block float-left"
-                                                                data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </h5>
-                                                    </div>
-                                                    <div class="modal-body pt-1 text-right">
-                                                        <form action="#">
-                                                            <label for="curentPass">كلمة المرور الحاليه</label>
-                                                            <div class="input-group newInputGroup mb-3">
-                                                                <input type="password" required
-                                                                    class="form-control py-4 border-left-0"
-                                                                    placeholder="**********" id="curentPass">
-                                                                <div class="input-group-append">
-                                                                    <div class="input-group-text bg-white border-right-0"
-                                                                        id="basic-addon2">
-                                                                        <span toggle="#password-field"
-                                                                            class="fa fa-fw fa-eye field-icon cuurentPass"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <label for="fPass">كلمة المرور الجديدة</label>
-                                                            <div class="input-group newInputGroup mb-3">
-                                                                <input type="password" required
-                                                                    class="form-control py-4 border-left-0"
-                                                                    placeholder="**********" id="fPass">
-                                                                <div class="input-group-append">
-                                                                    <div class="input-group-text bg-white border-right-0"
-                                                                        id="basic-addon2">
-                                                                        <span toggle="#password-field"
-                                                                            class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <label for="forgetPassConfirm"> تاكيد كلمة المرور الجديدة
-                                                            </label>
-                                                            <div class="input-group newInputGroup mb-3">
-                                                                <input type="password" required
-                                                                    class="form-control py-4 border-left-0"
-                                                                    placeholder="**********" id="forgetPassConfirm">
-                                                                <div class="input-group-append">
-                                                                    <div class="input-group-text bg-white border-right-0"
-                                                                        id="basic-addon2">
-                                                                        <span toggle="#password-fieldC"
-                                                                            class="fa fa-fw fa-eye field-icon toggle-passwordC"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <button
-                                                                class="btn btnChangePass font-weight-bold btn-block mt-3">تغيير</button>
-                                                        </form>
-                                                    </div>
+                                                    <input id="email" required value="Mohamed@abosoliman.com" class="txtColor border-0 form-control" type="email">
                                                 </div>
                                             </div>
                                         </div>
                                     </form>
+                                    <button class="btn btnChangePass btn-block mt-4" data-toggle="modal"
+                                        data-target="#forgetPass">تغيير الرقم السري</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="forgetPass" tabindex="-1" role="dialog"
+                                        aria-labelledby="forgetPass" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-bottom-0">
+                                                    <h5 class="modal-title d-block font-weight-bold pt-1 txtColor text-right w-100"
+                                                        id="forgetPass">
+                                                        تغيير كلمة المرور
+                                                        <button type="button" class="close d-block float-left"
+                                                            data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body pt-1 text-right">
+                                                    <form action="#">
+                                                        <label for="curentPass">كلمة المرور الحاليه</label>
+                                                        <div class="input-group newInputGroup mb-3">
+                                                            <input type="password" required
+                                                                class="form-control py-4 border-left-0"
+                                                                placeholder="**********" id="curentPass">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text bg-white border-right-0"
+                                                                    id="basic-addon2">
+                                                                    <span toggle="#password-field"
+                                                                        class="fa fa-fw fa-eye field-icon cuurentPass"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <label for="fPass">كلمة المرور الجديدة</label>
+                                                        <div class="input-group newInputGroup mb-3">
+                                                            <input type="password" required
+                                                                class="form-control py-4 border-left-0"
+                                                                placeholder="**********" id="fPass">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text bg-white border-right-0"
+                                                                    id="basic-addon2">
+                                                                    <span toggle="#password-field"
+                                                                        class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <label for="forgetPassConfirm"> تاكيد كلمة المرور الجديدة
+                                                        </label>
+                                                        <div class="input-group newInputGroup mb-3">
+                                                            <input type="password" required
+                                                                class="form-control py-4 border-left-0"
+                                                                placeholder="**********" id="forgetPassConfirm">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text bg-white border-right-0"
+                                                                    id="basic-addon2">
+                                                                    <span toggle="#password-fieldC"
+                                                                        class="fa fa-fw fa-eye field-icon toggle-passwordC"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button
+                                                            class="btn btnChangePass font-weight-bold btn-block mt-3">تغيير</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +293,7 @@
                                             <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
                                                 class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 512 512">
-                                                <path fill="blue"
+                                                <path fill="red"
                                                 d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                                 </path>
                                             </svg>
@@ -364,7 +364,7 @@
                                             <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
                                                 class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 512 512">
-                                                <path fill="blue"
+                                                <path fill="red"
                                                 d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                                 </path>
                                             </svg>
@@ -438,7 +438,7 @@
                                             <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
                                                 class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 512 512">
-                                                <path fill="blue"
+                                                <path fill="red"
                                                 d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                                 </path>
                                             </svg>
@@ -509,7 +509,7 @@
                                             <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
                                                 class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 512 512">
-                                                <path fill="blue"
+                                                <path fill="red"
                                                 d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
                                                 </path>
                                             </svg>
