@@ -5,14 +5,17 @@
     background-color: #e6e9ff;
     color: #18191a !important;
 }
+.newDropdown a:hover{
+    border-bottom: unset !important;
+}
 .btnLogout{
     border-radius: 12px;
-    background-color: #ffffff;
-    color: #ef106c !important;
-    border: solid 0.5px #ef106c;
+    background-color: #4f69ff;
+    color: #ffffff !important;
+    border: solid 0.5px #4f69ff;
 }
 .btnLogout:hover{
-    opacity: 0.8;
+    background-color: #3b50c5;
 }
 .profileSection{
     background-color: #f7f8fe;
@@ -39,7 +42,7 @@
     background-color: #4f69ff;
 }
 .btnChangePass:hover{
-    opacity: 0.8;
+    background-color: #3b50c5;
     color: white;
 }
 .modal-backdrop {

@@ -31,6 +31,13 @@
     font-weight: bold;
     color: #4f69ff;
 }
+.formGroup .form-group:focus .form-control,.formGroup .form-group:active .form-control,
+.formGroup .form-group:visited .form-control,.formGroup .form-group:hover .form-control{
+    background-color: #e5ebf7 !important;
+}
+.formGroup .form-group:focus,.formGroup .form-group:active,.formGroup .form-group:visited,.formGroup .form-group:hover{
+    background-color: #e5ebf7 !important;
+}
 .carousel-control-next-icon{
     /* background-color: white; */
     right: -10px;

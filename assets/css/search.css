@@ -168,6 +168,9 @@
     top: 10px;
     right: 15px;
 }
+.advanceSearch{
+    text-align: left;
+}
 @media screen and (max-width:600px){
     .searchSection{
         padding-right: 1rem;
@@ -177,6 +180,12 @@
         left: unset;
         right: unset;
         top: 20px;
+    }
+    .advSearch{
+        padding-bottom: 1.5rem;
+    }
+    .advanceSearch{
+        text-align: right;
     }
 }
 @media (max-width: 400px){
