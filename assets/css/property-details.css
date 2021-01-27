@@ -6,8 +6,30 @@
     text-align: center;
     font-weight: bold;
 }
+.newTextColor{
+    color: #4f69ff;
+}
+.txtG{
+    color: rgba(13, 36, 54, 0.8);
+}
 .nav-fixed{
     background-color: white;
+}
+.formGroup .form-group{
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    border: solid 1px #b1bbf5;
+}
+.formGroup label{
+    text-align: right;
+    color: #18191a;
+}
+.formGroup .form-control{
+    border: none;
+    padding-right: 0;
+    padding-top: 0rem;
+    font-weight: bold;
+    color: #4f69ff;
 }
 .carousel-control-next-icon{
     /* background-color: white; */

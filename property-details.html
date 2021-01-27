@@ -200,13 +200,52 @@
                     <button class="btnImage">
                         <img src="assets/imgs/compund/share.svg" width="22px" height="27px" />
                     </button>
-                    <button class="btn btnIntrest" data-toggle="modal" data-target="#forgetPass"> مهتم؟ إضغط
+                    <button class="btn btnIntrest" data-toggle="modal" data-target="#interested"> مهتم؟ إضغط
                         هنا
                     </button>
                 </div>
             </div>
         </div>
     </section>
+    <div class="modal fade" id="interested" tabindex="-1" role="dialog" aria-labelledby="interested" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h4 class="modal-title d-block font-weight-bold pt-1 newTextColor text-right w-100" id="forgetPass">
+                        مهتم بهذه الوحدة؟
+                        <button type="button" class="close d-block float-left" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </h4>
+                </div>
+                <div class="modal-body pt-1 text-right">
+                    <h6 class="txtG pb-3">إملأ البيانات التالية أو إتصل على +2010038288103</h6>
+                    <form action="#" class="formGroup">
+                        <div class="form-group">
+                            <label for="myName">إسمك</label>
+                            <input id="myName" class="form-control" type="text" name="" placeholder="محمد أبو سليمان">
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">رقم التليفون</label>
+                            <input id="telephone" class="form-control" type="tel" name="" placeholder="ex: 1235787">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الالكتروني</label>
+                            <input id="email" class="form-control" type="email" name="" placeholder="mohamed@pencil.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="my-textarea">الرساله</label>
+                            <textarea id="my-textarea" class="form-control" placeholder="أكتب نص الرسالة هنا" name="" rows="3"></textarea>
+                        </div>
+                        <p class="text-muted text-center">
+                            سيقوم وكيلنا بمعاودة الاتصال بك في غضون 24 ساعة لمساعدتك في ما هو مطلوب
+                        </p>
+                        <button class="btn btnIntrest font-weight-bold btn-block mt-3">إرسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="aos-init aos-animate akarDetail" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="container">
             <!-- Nav pills -->
@@ -767,7 +806,7 @@
                                         <p class="text-center pb-1">خصم 10% علي الكاش</p>
                                     </div>
                                     <p class="txtMenuPay">عرض خطة الأقساط التفصيلية</p>
-                                    <button class="btn btnIntrest btn-block"> مهتم؟ إضغط هنا </button>
+                                    <button class="btn btnIntrest btn-block" data-toggle="modal" data-target="#interested"> مهتم؟ إضغط هنا </button>
                                 </div>
                                 <div class="tab-pane container listPay fade active show" id="menu1">
                                     <ul class="list-group mt-3 text-right">
@@ -827,7 +866,7 @@
                                         <p class="text-center pb-1">خصم 10% علي الكاش</p>
                                     </div>
                                     <p class="txtMenuPay">عرض خطة الأقساط التفصيلية</p>
-                                    <button class="btn btnIntrest btn-block"> مهتم؟ إضغط هنا </button>
+                                    <button class="btn btnIntrest btn-block" data-toggle="modal" data-target="#interested"> مهتم؟ إضغط هنا </button>
                                 </div>
                             </div>
                         </div>

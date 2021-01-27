@@ -112,6 +112,7 @@
 }
 .filterOptions label{
     font-weight: bold;
+    color: #3a3335;
 }
 .filterOptions .form-control{
     height: 51px;

@@ -198,191 +198,193 @@
   </section>
   <section class="bg-white alarmMenu newSerchAdv">
     <div class="container text-right py-3">
-      <div class="row pb-3">
-        <div class="col-md-7">
-          <h5 class="newTextColor font-weight-bold">بحث متقدم </h5>
-        </div>
-        <div class="col-md-5 text-left">
-          <button class="btn btnDel mx-3">  مسح <span class="badge badge-primary">2</span></button>
-          <button class="btn btnApp">تطبيق</button>
-          <span class="float-left pt-1 closeTime mr-3"><img src="assets/imgs/close.PNG" alt=""></span>
-        </div>
-      </div>
-      <div class="row filterOptions pt-3">
-        <div class="col-lg-3 col-md-6">
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">نوع العقار</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>استديو</option>
-              <option>استديو</option>
-              <option>استديو</option>
-              <option>استديو</option>
-            </select>
+      <form action="search.html">
+        <div class="row pb-3">
+          <div class="col-md-7">
+            <h5 class="newTextColor font-weight-bold">بحث متقدم </h5>
           </div>
-          <div class="panel-group" id="accordion">
-
-            <!-- First Panel -->
-            <div class="panel panel-default bg-white rounded">
-              <div class="panel-heading pt-3">
-                <h6 class="panel-title font-weight-bold" data-toggle="collapse" data-target="#collapseOne">الموقع</h6>
-              </div>
-              
-              <div id="collapseOne" class="panel-collapse collapse show">
-                <div class="panel-body pt-2 pr-0">
-                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
-                    <input type="checkbox" class="custom-control-input float-right" id="myCheckBox">
-                    <label class="custom-control-label" for="myCheckBox">مدينتي</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
-                    <input type="checkbox" class="custom-control-input float-right" id="helioplis">
-                    <label class="custom-control-label" for="helioplis">هليوبليس</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
-                    <input type="checkbox" class="custom-control-input float-right" id="tagamoe">
-                    <label class="custom-control-label" for="tagamoe">التجمع الخامس</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
-                    <input type="checkbox" class="custom-control-input float-right" id="katamy">
-                    <label class="custom-control-label" for="katamy">القطاميه</label>
-                  </div>
-                  <div class="custom-control custom-checkbox mr-sm-2 py-1">
-                    <input type="checkbox" class="custom-control-input float-right" id="sheck">
-                    <label class="custom-control-label" for="sheck">الشيخ زايد</label>
+          <div class="col-md-5 text-left">
+            <button type="reset" class="btn btnDel mx-3">  مسح <span class="badge badge-primary">2</span></button>
+            <button type="submit" class="btn btnApp">تطبيق</button>
+            <span class="float-left pt-1 closeTime mr-3"><img src="assets/imgs/close.PNG" alt=""></span>
+          </div>
+        </div>
+        <div class="row filterOptions pt-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">نوع العقار</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>استديو</option>
+                <option>استديو</option>
+                <option>استديو</option>
+                <option>استديو</option>
+              </select>
+            </div>
+            <div class="panel-group" id="accordion">
+  
+              <!-- First Panel -->
+              <div class="panel panel-default bg-white rounded">
+                <div class="panel-heading pt-3">
+                  <h6 class="panel-title font-weight-bold" data-toggle="collapse" data-target="#collapseOne">الموقع</h6>
+                </div>
+                
+                <div id="collapseOne" class="panel-collapse collapse show">
+                  <div class="panel-body pt-2 pr-0">
+                    <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                      <input type="checkbox" class="custom-control-input float-right" id="myCheckBox">
+                      <label class="custom-control-label" for="myCheckBox">مدينتي</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                      <input type="checkbox" class="custom-control-input float-right" id="helioplis">
+                      <label class="custom-control-label" for="helioplis">هليوبليس</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                      <input type="checkbox" class="custom-control-input float-right" id="tagamoe">
+                      <label class="custom-control-label" for="tagamoe">التجمع الخامس</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                      <input type="checkbox" class="custom-control-input float-right" id="katamy">
+                      <label class="custom-control-label" for="katamy">القطاميه</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mr-sm-2 py-1">
+                      <input type="checkbox" class="custom-control-input float-right" id="sheck">
+                      <label class="custom-control-label" for="sheck">الشيخ زايد</label>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <label>المساحه</label>
-          <div class="row">
-            <div class="col">
-              <div class="form-group">
-                <select id="inputState" class="form-control">
-                  <option selected>من</option>
-                  <option>...</option>
-                </select>
+          <div class="col-lg-3 col-md-6">
+            <label>المساحه</label>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <select id="inputState" class="form-control">
+                    <option selected>من</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <select id="inputState" class="form-control">
+                    <option selected>الي</option>
+                    <option>...</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div class="col">
-              <div class="form-group">
-                <select id="inputState" class="form-control">
-                  <option selected>الي</option>
-                  <option>...</option>
-                </select>
+            <label>السعر الكلي</label>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <select id="inputState" class="form-control">
+                    <option selected>من</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <select id="inputState" class="form-control">
+                    <option selected>الي</option>
+                    <option>...</option>
+                  </select>
+                </div>
               </div>
             </div>
+            <div class="form-group">
+              <label for="numbRooms">عدد الغرف</label>
+              <select id="numbRooms" class="form-control">
+                <option selected>عدد الغرف</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tashteeb">نوع التشطيب</label>
+              <select id="tashteeb" class="form-control">
+                <option selected>لوكس</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="view">المنظر</label>
+              <select id="view" class="form-control">
+                <option selected>حديقه</option>
+                <option>...</option>
+              </select>
+            </div>
           </div>
-          <label>السعر الكلي</label>
-          <div class="row">
-            <div class="col">
-              <div class="form-group">
-                <select id="inputState" class="form-control">
-                  <option selected>من</option>
-                  <option>...</option>
-                </select>
+          <div class="col-lg-3 col-md-6">
+            <label>يمكنني تحمل دفعة أولى بقيمة</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend border-left-0">
+                <span class="input-group-text bg-white" id="basic-addon2">الحد الاقصي</span>
               </div>
+              <input type="text" class="form-control border-right-0" dir="rtl" placeholder=" 5000 جم" aria-label="Recipient's username" aria-describedby="basic-addon2">
             </div>
-            <div class="col">
-              <div class="form-group">
-                <select id="inputState" class="form-control">
-                  <option selected>الي</option>
-                  <option>...</option>
-                </select>
+            <div class="form-group">
+              <label for="years"> عدد سنين التقسيط</label>
+              <select id="years" class="form-control">
+                <option selected> 1 </option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="numbBaths">  عدد الحمامات </label>
+              <select id="numbBaths" class="form-control">
+                <option selected> 1 </option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="collects">  المجمع  </label>
+              <select id="collects" class="form-control">
+                <option selected> la vista </option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="morfqat">  المرافق  </label>
+              <select id="morfqat" class="form-control">
+                <option selected> غاز طبيعي </option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <label>الأقساط التي استطيع دفعها شهريًا</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend border-left-0">
+                <span class="input-group-text bg-white" id="basic-addon2">الحد الاقصي</span>
               </div>
+              <input type="text" class="form-control border-right-0" dir="rtl" placeholder=" 5000 جم" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            </div>
+            <div class="form-group">
+              <label for="deadTime">  سنة التسليم </label>
+              <select id="deadTime" class="form-control">
+                <option selected> 1 </option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="floorN"> الطابق  </label>
+              <select id="floorN" class="form-control">
+                <option selected> 1 </option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="developer">  المطور </label>
+              <select id="developer" class="form-control">
+                <option selected> اعمار مصر </option>
+                <option>...</option>
+              </select>
             </div>
           </div>
-          <div class="form-group">
-            <label for="numbRooms">عدد الغرف</label>
-            <select id="numbRooms" class="form-control">
-              <option selected>عدد الغرف</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="tashteeb">نوع التشطيب</label>
-            <select id="tashteeb" class="form-control">
-              <option selected>لوكس</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="view">المنظر</label>
-            <select id="view" class="form-control">
-              <option selected>حديقه</option>
-              <option>...</option>
-            </select>
-          </div>
         </div>
-        <div class="col-lg-3 col-md-6">
-          <label>يمكنني تحمل دفعة أولى بقيمة</label>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend border-left-0">
-              <span class="input-group-text bg-white" id="basic-addon2">الحد الاقصي</span>
-            </div>
-            <input type="text" class="form-control border-right-0" dir="rtl" placeholder=" 5000 جم" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          </div>
-          <div class="form-group">
-            <label for="years"> عدد سنين التقسيط</label>
-            <select id="years" class="form-control">
-              <option selected> 1 </option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="numbBaths">  عدد الحمامات </label>
-            <select id="numbBaths" class="form-control">
-              <option selected> 1 </option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="collects">  المجمع  </label>
-            <select id="collects" class="form-control">
-              <option selected> la vista </option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="morfqat">  المرافق  </label>
-            <select id="morfqat" class="form-control">
-              <option selected> غاز طبيعي </option>
-              <option>...</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <label>الأقساط التي استطيع دفعها شهريًا</label>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend border-left-0">
-              <span class="input-group-text bg-white" id="basic-addon2">الحد الاقصي</span>
-            </div>
-            <input type="text" class="form-control border-right-0" dir="rtl" placeholder=" 5000 جم" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          </div>
-          <div class="form-group">
-            <label for="deadTime">  سنة التسليم </label>
-            <select id="deadTime" class="form-control">
-              <option selected> 1 </option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="floorN"> الطابق  </label>
-            <select id="floorN" class="form-control">
-              <option selected> 1 </option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="developer">  المطور </label>
-            <select id="developer" class="form-control">
-              <option selected> اعمار مصر </option>
-              <option>...</option>
-            </select>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
   </section>
   <section class="bg-white alarmMenu willHide notifications">
