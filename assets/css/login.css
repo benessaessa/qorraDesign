@@ -68,7 +68,9 @@ color: #4f69ff;
 @media screen and (max-width:500px){
     .loginSection{
         background-color: white;
-        margin-left: 2rem;
+    }
+    .loginSection h1{
+        padding-right: 1rem;
     }
 }
 @media screen and (max-width:320px){
