@@ -152,7 +152,7 @@
         </div>
 
     </header>
-    <section class="property-details" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <section class="property-details sticky-top bg-white" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-5">
@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7 text-right pb-3">
-                    <button class="btn text-dark font-weight-bold align-items-center">
+                    <button class="btn text-dark font-weight-bold align-items-center pr-0">
                         <svg xmlns="http://www.w3.org/2000/svg" class="mx-2" width="32" height="32" viewBox="0 0 32 32">
                             <g fill="none" fill-rule="evenodd">
                                 <g>
@@ -191,22 +191,27 @@
                         </svg>
                         201003453395+
                     </button>
-                    <button class="btnImage">
+                    <button class="btnImage pt-3">
                         <img src="assets/imgs/compund/map-pin.svg" width="22px" height="27px" />
                     </button>
-                    <button class="btnImage">
-                        <img src="assets/imgs/compund/map-pin.svg" width="22px" height="27px" />
+                    <button class="btnImage pt-3">
+                        <img src="assets/imgs/heart.PNG" width="22px" height="27px" />
                     </button>
-                    <button class="btnImage">
+                    <button class="btnImage pt-3">
                         <img src="assets/imgs/compund/share.svg" width="22px" height="27px" />
                     </button>
-                    <button class="btn btnIntrest sticky-top" data-toggle="modal" data-target="#interested"> مهتم؟ إضغط
+                    <button class="btn btnIntrest btnHide" data-toggle="modal" data-target="#interested"> مهتم؟ إضغط
                         هنا
                     </button>
                 </div>
             </div>
         </div>
     </section>
+    <div class="container">
+        <button class="btn btnIntrest fixedbutton d-lg-none" data-toggle="modal" data-target="#interested"> مهتم؟ إضغط
+            هنا
+        </button>
+    </div>
     <div class="modal fade" id="interested" tabindex="-1" role="dialog" aria-labelledby="interested" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -651,7 +656,7 @@
                         </div>
                     </div>
                     <h4 class="textService py-2">الخدمات</h4>
-                    <div class="row pb-4">
+                    <div class="row pb-2">
                         <div class="col-md-6">
                             <ul class="list-group list-group-flush listService border-0">
                                 <li class="list-group-item">
@@ -733,6 +738,7 @@
                             </ul>
                         </div>
                     </div>
+                    <button class="btn pb-5 font-weight-bold newTextColor pr-0 border-0 pt-0">عرض مزيد من التفاصيل حول المجمع</button>
                 </div>
 
                 <div class="col-lg-4 mb-4">

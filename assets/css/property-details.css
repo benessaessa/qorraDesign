@@ -15,6 +15,12 @@
 .nav-fixed{
     background-color: white;
 }
+.fixedbutton {
+    position: fixed;
+    bottom: 5px;
+    right: 9%; 
+    z-index: 1001;
+}
 .formGroup .form-group{
     border-radius: 8px;
     padding: 0.4rem 0.8rem;
@@ -82,8 +88,20 @@
 .btnImage{
     background-color: white;
     border: solid 0.5px rgba(0, 0, 0, 0.07);
-    padding: 13px 13px 12px;
+    padding: 12px;
+    margin: 0 0.2rem;
     border-radius: 10px;
+}
+.btnHeart{
+    padding-top: 0rem;
+}
+.btnHeart i{
+    width: 30px;
+    height: 20px;
+}
+.btnImage:hover,.btnImage:focus{
+    border: solid 0.5px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 4px 0 rgb(25 35 37 / 22%);
 }
 .btnIntrest{
     padding: 13px 31px 12px 32px;
@@ -246,9 +264,32 @@
 }
 .modal {
     overflow-y:auto;
-  }
+}
+.swiper-button-next{
+    right: auto;
+    transform: rotate(180deg);
+}
+.swiper-button-prev{
+    left: auto;
+    right: 20px;
+    transform: rotate(180deg);
+}
 @media screen and (max-width:780px){
     .newSlider .carousel-item img{
         min-height: 300px;
+    }
+    .sticky-top{
+        z-index: 0;
+    }
+}
+@media screen and (max-width:500px){
+    .btnHide{
+        display: none;
+    }
+    .fixedbutton{
+        right: 5%;
+    }
+    .btnImage{
+        margin: 0;
     }
 }
