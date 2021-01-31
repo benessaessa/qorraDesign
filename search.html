@@ -167,14 +167,20 @@
         <div class="col-xl-2 col-lg-3 col-md-4 pb-3">
           <div class="input-group areaDimentions">
             <div class="input-group-prepend">
-              <span class="input-group-text bg-white px-2">المساحه</span>
+              <span class="input-group-text bg-white px-1">المساحه</span>
             </div>
-            <input type="text" aria-label="First name" placeholder="من" class="form-control px-1 text-center">
-            <input type="text" aria-label="Last name" placeholder="إلي" class="form-control lastInput px-1 text-center">
+            <div class="form-group d-inline">
+              <label for="from">من</label>
+              <input type="text" class="form-control border-0" value="100">
+            </div>
+            <div class="form-group d-inline">
+              <label for="to">الي</label>
+              <input type="text" class="form-control border-0" value="150">
+            </div>
           </div>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-4">
-          <div class="input-group mb-3" dir="ltr">
+          <div class="input-group inptGrp mb-3" dir="ltr">
             <input type="text" class="form-control border-right-0" dir="rtl" placeholder=" 5000 جم" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append border-left-0">
               <span class="input-group-text bg-white" id="basic-addon2">مقدم</span>
@@ -387,10 +393,25 @@
       </form>
     </div>
   </section>
+  <section class="bg-white alarmMenu notHide">
+    <div class="container text-right pt-3 pb-2">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <h6 class="font-weight-bold txtNotify">قوائم التنبيهات (3) <img src="assets/imgs/arrowLeft.PNG" width="35" class="arrowAngle" alt=""></h6>
+        </div>
+        <div class="col-lg-6 col-md-4">
+          <button class="btn bg-white font-weight-bold border-0 pt-0 pr-0 newTextColor">حفظ قائمه البحث لقوائم التنبيهات </button>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <button class="btn -bg-white font-weight-bold border-0 pt-0 pr-0 txtTrteeb">ترتيب حسب الأحدث <img src="assets/imgs/sort.PNG" alt=""></button>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="bg-white alarmMenu willHide notifications">
     <div class="container text-right py-3">
       <h5 class="newTextColor font-weight-bold">قوائم التنبيهات 
-        <span class="float-left closeNotifications"><img src="assets/imgs/close.PNG" alt=""></span>
+        <span class="float-left closeNotificationsH"><img src="assets/imgs/close.PNG" alt=""></span>
       </h5>
     </div>
   </section>
@@ -490,9 +511,10 @@
     </div>
   
   </section>
-  <section class="most-viewed searchSection py-5  aos-init aos-animate" data-aos="fade-up"
+  <section class="most-viewed searchSection pb-5 pt-2 aos-init aos-animate" data-aos="fade-up"
     data-aos-anchor-placement="top-bottom">
     <div class="container">
+      <h4 class="text-right py-4"> النتائج تشمل وحدات في <span class="badge badgeS">The Vues </span><span class="badge badgeS">Sila </span></h4>
       <div class="row">
         <div class="col-md-4">
           <div class="swiper-slide mb-3">
@@ -699,9 +721,10 @@
           </div>
         </div>
         <div class="col-md-4">
-          <iframe src="https://maps.google.com/maps?q=Assuit&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
+          <div id="map"></div>
+          <!-- <iframe src="https://maps.google.com/maps?q=Assuit&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
             class="frameMap" frameborder="0" style="border:0" allowfullscreen>
-          </iframe>
+          </iframe> -->
         </div>
       </div>
     </div>
@@ -942,20 +965,62 @@
 
       }());
       $(document).ready(function(){
+        $('.willHide').hide();
         $('.advanceSearch').click(function(){
-          $('.willHide').css("display","none");
+          $('.willHide').hide();
           $('.filterSection').css("display","none");
+          $('.notHide').css("display","none");
           $('.newSerchAdv').css({"margin-top":"5.5rem","display":"block"});
         });
         $('.closeTime').click(function(){
           $('.newSerchAdv').css("display","none");
           $('.filterSection').css("display","block");
-          $('.willHide').css("display","block");
+          $('.willHide').hide();
+          $('.notHide').css("display","block"); 
         });
         $('.closeNotifications').click(function(){
+          $('.willHide').hide();
+        });
+        $('.txtNotify').click(function(){
+          $('.willHide').show();
+          $('.notHide').css("display","none");
+        });
+        $('.closeNotificationsH').click(function(){
+          $('.notHide').css("display","block");
           $('.willHide').css("display","none");
         });
       });
+    </script>
+    <script>
+      // In the following example, markers appear when the user clicks on the map.
+      // Each marker is labeled with a single alphabetical character.
+      const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let labelIndex = 0;
+
+      function initMap() {
+        const bangalore = { lat: 12.97, lng: 77.59 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: bangalore,
+        });
+        // This event listener calls addMarker() when the map is clicked.
+        google.maps.event.addListener(map, "click", (event) => {
+          addMarker(event.latLng, map);
+        });
+        // Add a marker at the center of the map.
+        addMarker(bangalore, map);
+      }
+
+      // Adds a marker to the map.
+      function addMarker(location, map) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+        new google.maps.Marker({
+          position: location,
+          label: labels[labelIndex++ % labels.length],
+          map: map,
+        });
+      }
     </script>
   </footer>
 </body>

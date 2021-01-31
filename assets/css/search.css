@@ -7,6 +7,14 @@
 .newTextColor span i{
     color: gray;
 }
+.txtTrteeb{
+    color: rgba(13, 36, 54, 0.6);
+    display: block;
+    margin-right: auto;
+}
+.notHide h6{
+    cursor: pointer;
+}
 .frameMap{
     min-height: 100vh;
 }
@@ -35,8 +43,44 @@
 .lastInput{
     border-radius: 10.5px 0px 0px 10.5px !important;
 }
-.areaDimentions .input-group-text{
+.badgeS{
+    border-radius: 13.5px;
+    background-color: #e2e2e7;
+    font-size: 12px;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+}
+.areaDimentions .input-group-text,.inptGrp .input-group-text{
     border-radius: 0px 10.5px 10.5px 0px !important;
+}
+.areaDimentions span{
+    font-size: 11px;
+}
+.areaDimentions .input-group-prepend{
+    height: 51px;
+}
+.areaDimentions .form-group{
+    border: 1px solid #ced4da;
+    overflow: hidden;
+    background-color: #e5ebf7;
+}
+.areaDimentions .form-group:last-child{
+    border-radius: 10.5px 0px 0px 10.5px !important;
+}
+.areaDimentions .form-group label{
+    font-size: 13px;
+    margin-bottom: 0px;
+    float: right;
+    padding-right: 0.5rem;
+    color: rgba(13, 36, 54, 0.6);
+}
+.areaDimentions .form-group .form-control{
+    background-color: #e5ebf7;
+    height: 30px;
+    text-align: right;
+    clear: both;
+    padding-bottom: 2px;
+    width: 53px;
 }
 .most-viewed .swiper-container {
     padding-bottom: 35px;
@@ -171,6 +215,20 @@
 .advanceSearch{
     text-align: left;
 }
+#map {
+    height: 100%;
+}
+.txtNotify{
+    color: #18191a;
+}
+@media screen and (max-width:767px){
+    .areaDimentions .form-group{
+        width: 40% !important;
+    }
+    .areaDimentions .input-group-text{
+        padding: 0.5rem !important;
+    }
+}
 @media screen and (max-width:600px){
     .searchSection{
         padding-right: 1rem;
@@ -186,6 +244,9 @@
     }
     .advanceSearch{
         text-align: right;
+    }
+    .txtTrteeb{
+        margin-right: unset;
     }
 }
 @media (max-width: 400px){

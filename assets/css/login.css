@@ -79,4 +79,7 @@ color: #4f69ff;
         font-size: 14px;
         padding-top: 1px;
     }
+    .card-body .btnFace{
+        padding-left: 0;
+    }
 }
