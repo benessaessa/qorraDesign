@@ -274,6 +274,9 @@
     right: 20px;
     transform: rotate(180deg);
 }
+.cardPay .list-group .list-group-item .d-flex .flex-fill{
+    color: #ef106c;
+}
 @media screen and (max-width:780px){
     .newSlider .carousel-item img{
         min-height: 300px;
@@ -292,4 +295,18 @@
     .btnImage{
         margin: 0;
     }
+    .cardPay .nav-pills .nav-link{
+        font-size: 12px;
+    }
+    .cardPay .list-group .list-group-item .d-flex .flex-fill{
+        font-size: 10px;
+    }
 }
+/* @media screen and (max-width:320px){
+    .cardPay .nav-pills .nav-link{
+        font-size: 12px;
+    }
+    .cardPay .list-group .list-group-item .d-flex .flex-fill{
+        font-size: 10px;
+    }
+} */
