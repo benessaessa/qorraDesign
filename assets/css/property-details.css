@@ -9,11 +9,9 @@
 .newTextColor{
     color: #4f69ff;
 }
-.txtG{
-    color: rgba(13, 36, 54, 0.8);
-}
 .nav-fixed{
     background-color: white;
+    position: relative;
 }
 .fixedbutton {
     position: fixed;
@@ -53,14 +51,17 @@
     border-radius: 10px;
     box-shadow: 0 32px 96px -8px rgba(0, 0, 0, 0.69);
     height: 40px;
+    opacity: 1;
     position: absolute;
 }
 .carousel-control-prev-icon{
     /* background-color: white; */
     left: -10px;
-    background-image: url(../imgs/arrowLeft.PNG);
+    background-image: url(../imgs/arrowRight.PNG);
+    opacity: 1;
     opacity: 1;
     width: 40px;
+    transform: rotate(180deg);
     border-radius: 10px;
     box-shadow: 0 32px 96px -8px rgba(0, 0, 0, 0.69); 
     height: 40px;
@@ -83,12 +84,13 @@
     color: white;
 }
 .property-details{
-    padding-top: 6.5rem;
+    padding-top: 1rem;
 }
 .btnImage{
     background-color: white;
     border: solid 0.5px rgba(0, 0, 0, 0.07);
     padding: 12px;
+    height: 46px;
     margin: 0 0.2rem;
     border-radius: 10px;
 }
@@ -101,7 +103,7 @@
 }
 .btnImage:hover,.btnImage:focus{
     border: solid 0.5px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 4px 4px 0 rgb(25 35 37 / 22%);
+    background-color: #f4f4f4;
 }
 .btnIntrest{
     padding: 13px 31px 12px 32px;
@@ -277,12 +279,34 @@
 .cardPay .list-group .list-group-item .d-flex .flex-fill{
     color: #ef106c;
 }
+.cardPay .nav-link{
+    text-align: center;
+}
+.circleImage{
+    width: 46px;
+    height: 19px;
+    object-fit: cover;
+}
+.btnHide{
+    font-size: 14px;
+}
+.carousel-control-prev,.carousel-control-next{
+    opacity: 1;
+}
+.txtG{
+    color: rgba(13, 36, 54, 0.8) !important;
+}
+.btnCall:hover{
+    color: #4f69ff !important;
+    border-bottom: 1px solid #3E57E3;
+}
 @media screen and (max-width:780px){
     .newSlider .carousel-item img{
         min-height: 300px;
     }
     .sticky-top{
         z-index: 0;
+        position: relative;
     }
 }
 @media screen and (max-width:500px){
@@ -301,12 +325,20 @@
     .cardPay .list-group .list-group-item .d-flex .flex-fill{
         font-size: 10px;
     }
+    .btnCall{
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+    .flex-column{
+        flex-direction: row !important;
+        margin-bottom: 1.8rem;
+    }
+    .panel-body .flex-column .nav-item .nav-link{
+        font-size: 14px;
+    }
 }
-/* @media screen and (max-width:320px){
-    .cardPay .nav-pills .nav-link{
-        font-size: 12px;
+@media screen and (max-width:320px){
+    .panel-body .flex-column .nav-item .nav-link{
+        font-size: 11px;
     }
-    .cardPay .list-group .list-group-item .d-flex .flex-fill{
-        font-size: 10px;
-    }
-} */
+}

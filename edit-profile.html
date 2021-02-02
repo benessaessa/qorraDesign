@@ -203,7 +203,8 @@
                                                 </div>
                                                 <div class="form-group border formBg">
                                                     <label class="pr-2 mb-0" for="telephone">رقم الهاتف</label>
-                                                    <input type="tel" id="telephone" required class="txtColor border-0 form-control">
+                                                    <!-- <input type="tel" id="telephone" required class="txtColor border-0 form-control"> -->
+                                                    <input type="tel" pattern=".{11}" class="txtColor border-0 form-control" id="telephone" placeholder="0111 222 3333" oninput="check(this)" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-5 text-right">
@@ -286,293 +287,301 @@
                         <div class="tab-pane fade container pb-3" id="favourite">
                             <div class="bg-white pb-2 mb-3">
                                 <h6 class="text-right pt-3 text-muted pr-3"> الوحدات المختارة</h6>
-                                <div class="row bg-white py-3 mx-3 border rowB mb-3 mt-3">
-                                    <div class="col-lg-4">
-                                        <div class="contentH">
-                                            <img src="assets/imgs/home/mostViewed.png" class="img-fluid imgHeight rounded-0">
-                                            <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 512 512">
-                                                <path fill="red"
-                                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="row most-viewed bg-white">
-                                            <div class="col-lg-9">
-                                                <div class="info d-flex py-2">
-                                                    <div class="pl-3">
-                                                        <img src="assets/imgs/home/logo.png" width="50px" height="50px"
-                                                            class="rounded-circle" />
-                                                    </div>
-                                                    <div>
-                                                        <p class="font-weight-bold text-right mb-0">النموذج الاول - الطابق
-                                                            الارضي</p>
-                                                        <small class="country text-right d-block">223123</small>
-                                                    </div>
-                                                </div>
-                                                <div class="info-list pb-2">
-                                                    <ul class="list-unstyled p-0 text-right mb-0">
-                                                        <li> <span>المساحه:</span> <span>168 m2</span></li>
-                                                        <li> <span>الغرف:</span> <span> 3</span></li>
-                                                        <li> <span>الحمامات:</span> <span> 2</span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="info-list pb-2">
-                                                    <ul class="list-unstyled p-0 text-right mb-0">
-                                                        <li class="pl-3"> <span> السعر الكلي :</span> <span> EGP
-                                                            12,600</span></li>
-                                                        <li> <span>موعد التسليم:</span> <span> 2020</span></li>
-                                                    </ul>
-                                                </div>
-                                                <ul class="list-unstyled list-benefits p-1 text-right">
-                                                    <li><img src="assets/imgs/benefits/grass.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/carpark.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/running.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/fountain.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/bike-path.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/playground.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/interior.png" /></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-3 text-center">
-                                                <ul class="list-group p-0 m-0 newListGroup">
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">المقدم:</p>
-                                                        <p class="listB">لا يوجد</p>
-                                                    </li>
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">القسط:</p>
-                                                        <p class="listB"> EGP 12,600 </p>
-                                                    </li>
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">سنين القسط:</p>
-                                                        <p class="listB p-color">10 سنوات</p>
-                                                    </li>
-                                                </ul>
+                                <a href="#">
+                                    <div class="row bg-white mx-3 border rowB mb-3 mt-3">
+                                        <div class="col-lg-4">
+                                            <div class="contentH">
+                                                <img src="assets/imgs/home/mostViewed.png" class="img-fluid imgHeight rounded-0">
+                                                <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                                                    class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 512 512">
+                                                    <path fill="red"
+                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                                    </path>
+                                                </svg>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row bg-white py-3 mx-3 border rowB mb-3 mt-3">
-                                    <div class="col-lg-4">
-                                        <div class="contentH">
-                                            <img src="assets/imgs/home/mostViewed.png" class="img-fluid imgHeight rounded-0">
-                                            <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 512 512">
-                                                <path fill="red"
-                                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="row most-viewed bg-white">
-                                            <div class="col-lg-9">
-                                                <div class="info d-flex py-2">
-                                                    <div class="pl-3">
-                                                        <img src="assets/imgs/home/logo.png" width="50px" height="50px"
-                                                            class="rounded-circle" />
+                                        <div class="col-lg-8">
+                                            <div class="row most-viewed bg-white">
+                                                <div class="col-lg-9">
+                                                    <div class="info d-flex py-2">
+                                                        <div class="pl-3">
+                                                            <img src="assets/imgs/home/logo.png" width="50px" height="50px"
+                                                                class="rounded-circle" />
+                                                        </div>
+                                                        <div>
+                                                            <p class="font-weight-bold text-right mb-0">النموذج الاول - الطابق
+                                                                الارضي</p>
+                                                            <small class="country text-right d-block">223123</small>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <p class="font-weight-bold text-right mb-0">النموذج الاول - الطابق
-                                                            الارضي</p>
-                                                        <small class="country text-right d-block">223123</small>
+                                                    <div class="info-list pb-2">
+                                                        <ul class="list-unstyled p-0 text-right mb-0">
+                                                            <li> <span>المساحه:</span> <span>168 m2</span></li>
+                                                            <li> <span>الغرف:</span> <span> 3</span></li>
+                                                            <li> <span>الحمامات:</span> <span> 2</span></li>
+                                                        </ul>
                                                     </div>
-                                                </div>
-                                                <div class="info-list pb-2">
-                                                    <ul class="list-unstyled p-0 text-right mb-0">
-                                                        <li> <span>المساحه:</span> <span>168 m2</span></li>
-                                                        <li> <span>الغرف:</span> <span> 3</span></li>
-                                                        <li> <span>الحمامات:</span> <span> 2</span></li>
+                                                    <div class="info-list pb-2">
+                                                        <ul class="list-unstyled p-0 text-right mb-0">
+                                                            <li class="pl-3"> <span> السعر الكلي :</span> <span> EGP
+                                                                12,600</span></li>
+                                                            <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <ul class="list-unstyled list-benefits p-1 text-right">
+                                                        <li><img src="assets/imgs/benefits/grass.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/running.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/playground.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/interior.png" /></li>
                                                     </ul>
                                                 </div>
-                                                <div class="info-list pb-2">
-                                                    <ul class="list-unstyled p-0 text-right mb-0">
-                                                        <li class="pl-3"> <span> السعر الكلي :</span> <span> EGP
-                                                            12,600</span></li>
-                                                        <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                                                <div class="col-lg-3 text-center">
+                                                    <ul class="list-group p-0 m-0 newListGroup">
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">المقدم:</p>
+                                                            <p class="listB">لا يوجد</p>
+                                                        </li>
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">القسط:</p>
+                                                            <p class="listB"> EGP 12,600 </p>
+                                                        </li>
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">سنين القسط:</p>
+                                                            <p class="listB p-color">10 سنوات</p>
+                                                        </li>
                                                     </ul>
                                                 </div>
-                                                <ul class="list-unstyled list-benefits p-1 text-right">
-                                                    <li><img src="assets/imgs/benefits/grass.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/carpark.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/running.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/fountain.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/bike-path.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/playground.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/interior.png" /></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-3 text-center">
-                                                <ul class="list-group p-0 m-0 newListGroup">
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">المقدم:</p>
-                                                        <p class="listB">لا يوجد</p>
-                                                    </li>
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">القسط:</p>
-                                                        <p class="listB"> EGP 12,600 </p>
-                                                    </li>
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">سنين القسط:</p>
-                                                        <p class="listB p-color">10 سنوات</p>
-                                                    </li>
-                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="#">
+                                    <div class="row bg-white mx-3 border rowB mb-3 mt-3">
+                                        <div class="col-lg-4">
+                                            <div class="contentH">
+                                                <img src="assets/imgs/home/mostViewed.png" class="img-fluid imgHeight rounded-0">
+                                                <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                                                    class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 512 512">
+                                                    <path fill="red"
+                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="row most-viewed bg-white">
+                                                <div class="col-lg-9">
+                                                    <div class="info d-flex py-2">
+                                                        <div class="pl-3">
+                                                            <img src="assets/imgs/home/logo.png" width="50px" height="50px"
+                                                                class="rounded-circle" />
+                                                        </div>
+                                                        <div>
+                                                            <p class="font-weight-bold text-right mb-0">النموذج الاول - الطابق
+                                                                الارضي</p>
+                                                            <small class="country text-right d-block">223123</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info-list pb-2">
+                                                        <ul class="list-unstyled p-0 text-right mb-0">
+                                                            <li> <span>المساحه:</span> <span>168 m2</span></li>
+                                                            <li> <span>الغرف:</span> <span> 3</span></li>
+                                                            <li> <span>الحمامات:</span> <span> 2</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="info-list pb-2">
+                                                        <ul class="list-unstyled p-0 text-right mb-0">
+                                                            <li class="pl-3"> <span> السعر الكلي :</span> <span> EGP
+                                                                12,600</span></li>
+                                                            <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <ul class="list-unstyled list-benefits p-1 text-right">
+                                                        <li><img src="assets/imgs/benefits/grass.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/running.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/playground.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/interior.png" /></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 text-center">
+                                                    <ul class="list-group p-0 m-0 newListGroup">
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">المقدم:</p>
+                                                            <p class="listB">لا يوجد</p>
+                                                        </li>
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">القسط:</p>
+                                                            <p class="listB"> EGP 12,600 </p>
+                                                        </li>
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">سنين القسط:</p>
+                                                            <p class="listB p-color">10 سنوات</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="bg-white pb-2 mb-3">
                                 <h6 class="text-right pt-3 text-muted pr-3"> الوحدات المفضلة</h6>
-                                <div class="row bg-white py-3 mx-3 border rowB mb-3 mt-3">
-                                    <div class="col-lg-4">
-                                        <div class="contentH">
-                                            <img src="assets/imgs/home/mostViewed.png" class="img-fluid imgHeight rounded-0">
-                                            <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 512 512">
-                                                <path fill="red"
-                                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="row most-viewed bg-white">
-                                            <div class="col-lg-9">
-                                                <div class="info d-flex py-2">
-                                                    <div class="pl-3">
-                                                        <img src="assets/imgs/home/logo.png" width="50px" height="50px"
-                                                            class="rounded-circle" />
-                                                    </div>
-                                                    <div>
-                                                        <p class="font-weight-bold text-right mb-0">النموذج الاول - الطابق
-                                                            الارضي</p>
-                                                        <small class="country text-right d-block">223123</small>
-                                                    </div>
-                                                </div>
-                                                <div class="info-list pb-2">
-                                                    <ul class="list-unstyled p-0 text-right mb-0">
-                                                        <li> <span>المساحه:</span> <span>168 m2</span></li>
-                                                        <li> <span>الغرف:</span> <span> 3</span></li>
-                                                        <li> <span>الحمامات:</span> <span> 2</span></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="info-list pb-2">
-                                                    <ul class="list-unstyled p-0 text-right mb-0">
-                                                        <li class="pl-3"> <span> السعر الكلي :</span> <span> EGP
-                                                            12,600</span></li>
-                                                        <li> <span>موعد التسليم:</span> <span> 2020</span></li>
-                                                    </ul>
-                                                </div>
-                                                <ul class="list-unstyled list-benefits p-1 text-right">
-                                                    <li><img src="assets/imgs/benefits/grass.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/carpark.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/running.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/fountain.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/bike-path.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/playground.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/interior.png" /></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-3 text-center">
-                                                <ul class="list-group p-0 m-0 newListGroup">
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">المقدم:</p>
-                                                        <p class="listB">لا يوجد</p>
-                                                    </li>
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">القسط:</p>
-                                                        <p class="listB"> EGP 12,600 </p>
-                                                    </li>
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">سنين القسط:</p>
-                                                        <p class="listB p-color">10 سنوات</p>
-                                                    </li>
-                                                </ul>
+                                <a href="#">
+                                    <div class="row bg-white mx-3 border rowB mb-3 mt-3">
+                                        <div class="col-lg-4">
+                                            <div class="contentH">
+                                                <img src="assets/imgs/home/mostViewed.png" class="img-fluid imgHeight rounded-0">
+                                                <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                                                    class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 512 512">
+                                                    <path fill="red"
+                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                                    </path>
+                                                </svg>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row bg-white py-3 mx-3 border rowB mb-3 mt-3">
-                                    <div class="col-lg-4">
-                                        <div class="contentH">
-                                            <img src="assets/imgs/home/mostViewed.png" class="img-fluid imgHeight rounded-0">
-                                            <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
-                                                class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 512 512">
-                                                <path fill="red"
-                                                d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <div class="row most-viewed bg-white">
-                                            <div class="col-lg-9">
-                                                <div class="info d-flex py-2">
-                                                    <div class="pl-3">
-                                                        <img src="assets/imgs/home/logo.png" width="50px" height="50px"
-                                                            class="rounded-circle" />
+                                        <div class="col-lg-8">
+                                            <div class="row most-viewed bg-white">
+                                                <div class="col-lg-9">
+                                                    <div class="info d-flex py-2">
+                                                        <div class="pl-3">
+                                                            <img src="assets/imgs/home/logo.png" width="50px" height="50px"
+                                                                class="rounded-circle" />
+                                                        </div>
+                                                        <div>
+                                                            <p class="font-weight-bold text-right mb-0">النموذج الاول - الطابق
+                                                                الارضي</p>
+                                                            <small class="country text-right d-block">223123</small>
+                                                        </div>
                                                     </div>
-                                                    <div>
-                                                        <p class="font-weight-bold text-right mb-0">النموذج الاول - الطابق
-                                                            الارضي</p>
-                                                        <small class="country text-right d-block">223123</small>
+                                                    <div class="info-list pb-2">
+                                                        <ul class="list-unstyled p-0 text-right mb-0">
+                                                            <li> <span>المساحه:</span> <span>168 m2</span></li>
+                                                            <li> <span>الغرف:</span> <span> 3</span></li>
+                                                            <li> <span>الحمامات:</span> <span> 2</span></li>
+                                                        </ul>
                                                     </div>
-                                                </div>
-                                                <div class="info-list pb-2">
-                                                    <ul class="list-unstyled p-0 text-right mb-0">
-                                                        <li> <span>المساحه:</span> <span>168 m2</span></li>
-                                                        <li> <span>الغرف:</span> <span> 3</span></li>
-                                                        <li> <span>الحمامات:</span> <span> 2</span></li>
+                                                    <div class="info-list pb-2">
+                                                        <ul class="list-unstyled p-0 text-right mb-0">
+                                                            <li class="pl-3"> <span> السعر الكلي :</span> <span> EGP
+                                                                12,600</span></li>
+                                                            <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <ul class="list-unstyled list-benefits p-1 text-right">
+                                                        <li><img src="assets/imgs/benefits/grass.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/running.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/playground.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/interior.png" /></li>
                                                     </ul>
                                                 </div>
-                                                <div class="info-list pb-2">
-                                                    <ul class="list-unstyled p-0 text-right mb-0">
-                                                        <li class="pl-3"> <span> السعر الكلي :</span> <span> EGP
-                                                            12,600</span></li>
-                                                        <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                                                <div class="col-lg-3 text-center">
+                                                    <ul class="list-group p-0 m-0 newListGroup">
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">المقدم:</p>
+                                                            <p class="listB">لا يوجد</p>
+                                                        </li>
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">القسط:</p>
+                                                            <p class="listB"> EGP 12,600 </p>
+                                                        </li>
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">سنين القسط:</p>
+                                                            <p class="listB p-color">10 سنوات</p>
+                                                        </li>
                                                     </ul>
                                                 </div>
-                                                <ul class="list-unstyled list-benefits p-1 text-right">
-                                                    <li><img src="assets/imgs/benefits/grass.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/carpark.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/running.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/fountain.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/bike-path.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/playground.png" /></li>
-                                                    <li><img src="assets/imgs/benefits/interior.png" /></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-3 text-center">
-                                                <ul class="list-group p-0 m-0 newListGroup">
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">المقدم:</p>
-                                                        <p class="listB">لا يوجد</p>
-                                                    </li>
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">القسط:</p>
-                                                        <p class="listB"> EGP 12,600 </p>
-                                                    </li>
-                                                    <li class="list-group-item m-0 p-0">
-                                                        <p class="listT">سنين القسط:</p>
-                                                        <p class="listB p-color">10 سنوات</p>
-                                                    </li>
-                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
+                                <a href="#">
+                                    <div class="row bg-white mx-3 border rowB mb-3 mt-3">
+                                        <div class="col-lg-4">
+                                            <div class="contentH">
+                                                <img src="assets/imgs/home/mostViewed.png" class="img-fluid imgHeight rounded-0">
+                                                <svg class="add-fav" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart"
+                                                    class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 512 512">
+                                                    <path fill="red"
+                                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="row most-viewed bg-white">
+                                                <div class="col-lg-9">
+                                                    <div class="info d-flex py-2">
+                                                        <div class="pl-3">
+                                                            <img src="assets/imgs/home/logo.png" width="50px" height="50px"
+                                                                class="rounded-circle" />
+                                                        </div>
+                                                        <div>
+                                                            <p class="font-weight-bold text-right mb-0">النموذج الاول - الطابق
+                                                                الارضي</p>
+                                                            <small class="country text-right d-block">223123</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info-list pb-2">
+                                                        <ul class="list-unstyled p-0 text-right mb-0">
+                                                            <li> <span>المساحه:</span> <span>168 m2</span></li>
+                                                            <li> <span>الغرف:</span> <span> 3</span></li>
+                                                            <li> <span>الحمامات:</span> <span> 2</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="info-list pb-2">
+                                                        <ul class="list-unstyled p-0 text-right mb-0">
+                                                            <li class="pl-3"> <span> السعر الكلي :</span> <span> EGP
+                                                                12,600</span></li>
+                                                            <li> <span>موعد التسليم:</span> <span> 2020</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <ul class="list-unstyled list-benefits p-1 text-right">
+                                                        <li><img src="assets/imgs/benefits/grass.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/carpark.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/swimming-pool.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/running.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/fountain.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/bike-path.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/playground.png" /></li>
+                                                        <li><img src="assets/imgs/benefits/interior.png" /></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 text-center">
+                                                    <ul class="list-group p-0 m-0 newListGroup">
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">المقدم:</p>
+                                                            <p class="listB">لا يوجد</p>
+                                                        </li>
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">القسط:</p>
+                                                            <p class="listB"> EGP 12,600 </p>
+                                                        </li>
+                                                        <li class="list-group-item m-0 p-0">
+                                                            <p class="listT">سنين القسط:</p>
+                                                            <p class="listB p-color">10 سنوات</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -582,13 +591,14 @@
     </div>
     <footer>
         <div class="bottomFooter">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-3 col-md-1 text-right">
+                    <div class="col-3 col-lg-1 col-md-2 text-right">
                         <img src="assets/imgs/logo-blue.png" height="33px" />
                     </div>
-                    <div class="col-md-4 col-9 ml-auto">
+                    <div class="col-lg-4 col-md-4 col-9 ml-auto">
                         <ul class="list-unstyled d-flex align-items-center justify-content-between p-0">
+                            <li><a href="#">بحث</a></li>
                             <li><a href="#">كيف نعمل</a></li>
                             <li><a href="#">الاسئله الشائعه</a></li>
                             <li><a href="#">سياسة الاستخدام</a></li>
