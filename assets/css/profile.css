@@ -14,8 +14,40 @@
     color: #ffffff !important;
     border: solid 0.5px #4f69ff;
 }
+.btnLogout{
+    padding: 10px 31px 9px 55px;
+    width: 79px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    text-align: center;
+    border-radius: 20px !important;
+    border: solid 0.5px #d1779c;
+    background-color: white;
+    color: #ef106c !important;
+}
 .btnLogout:hover{
     background-color: #3b50c5;
+    color: white !important;
+    border: solid 0.5px #3b50c5;
+}
+.nav-item .dropdown-menu{
+    border-radius: 12px;
+    overflow: hidden;
+}
+/* .dropdown-menu .dropdown-item{
+    padding: 0.8rem 1rem;
+} */
+.dropdown-menu .dropdown-item:hover{
+    border-right: 2px solid #4f69ff;
+}
+.add-fav path{
+    fill: red;
+    stroke: red;
+}
+.add-fav:hover path{
+    fill: transparent;
+    stroke-width: 30px;
 }
 .profileSection{
     background-color: #f7f8fe;
@@ -23,6 +55,7 @@
 .tabsMenu{
     background-color: white;
     border-radius: 18px;
+    overflow: hidden;
     box-shadow: 0 3px 4px 0 rgba(153, 155, 168, 0.15);
 }
 .tabsMenu .nav-item .nav-link{
