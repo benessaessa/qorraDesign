@@ -25,3 +25,9 @@
 .textFaq{
     color: rgba(13, 36, 54, 0.8);
 }
+.trans{
+    transition: height 0.5s ease-in-out;
+}
+/* .collapse {
+    transition: height 0.6s;
+} */

@@ -851,6 +851,15 @@ header .col-animation, header .col-info {
 
 }
 }
+.newSwipper .swiper-button-next{
+  right: auto;
+  transform: rotate(180deg);
+}
+.newSwipper .swiper-button-prev{
+  left: auto;
+  right: 20px;
+  transform: rotate(180deg);
+}
 @media (max-width:800px){
   .col-animation .form-group.focused .control-label {
     right: -140px;
