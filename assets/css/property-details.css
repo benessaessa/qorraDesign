@@ -336,6 +336,9 @@
     .panel-body .flex-column .nav-item .nav-link{
         font-size: 14px;
     }
+    .planTabs .nav-item .nav-link{
+        font-size: 12px;
+    }
 }
 @media screen and (max-width:320px){
     .panel-body .flex-column .nav-item .nav-link{
