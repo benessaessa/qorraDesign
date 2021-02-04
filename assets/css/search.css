@@ -62,6 +62,7 @@
 .areaDimentions .form-group{
     border: 1px solid #ced4da;
     overflow: hidden;
+    margin-bottom: 0;
     background-color: #e5ebf7;
 }
 .areaDimentions .form-group:last-child{
@@ -225,8 +226,13 @@
     .areaDimentions .form-group{
         width: 40% !important;
     }
+    .areaDimentions .input-group-prepend{
+        display: inline;
+        width: 20%;
+    }
     .areaDimentions .input-group-text{
-        padding: 0.5rem !important;
+        width: 140% !important;
+        padding: 1.05rem 0.5rem !important;
     }
 }
 @media screen and (max-width:600px){
@@ -274,6 +280,91 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+.multiselect {
+    width: 100%;
+  }
+  
+.selectBox {
+    position: relative;
+}
+  
+.selectBox select {
+    max-width: 100%;
+    font-weight: bold;
+}
+  
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+input[type=checkbox]{
+    margin-left: 0.2rem;
+}
+
+#checkboxes {
+    display: none;
+    max-width: 100%;
+    max-height: 140px;
+    overflow-y: scroll;
+    border: 1px #dadada solid;
+}
+  
+#checkboxes label {
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    padding: 3px 6px;
+}
+#checkboxes input:active label{
+    font-weight: bold;
+}
+#checkboxes label:hover {
+    background-color: #b8b8ff;
+}
+
+.checkbox-menu li {
+    text-align: right;
+    font-weight: bold;
+}
+.checkbox-menu li label {
+    display: block;
+    padding: 10px 10px;
+    clear: both;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    margin:0;
+    transition: background-color .4s ease;
+}
+.checkbox-menu li input {
+    margin: 0px 5px;
+    top: 2px;
+    position: relative;
+}
+
+.checkbox-menu li.active label {
+    /* background-color: #cbcbff; */
+    font-weight:bold;
+}
+
+.checkbox-menu li label:hover,
+.checkbox-menu li label:focus {
+    background-color: #f5f5f5;
+}
+
+.checkbox-menu li.active label:hover,
+.checkbox-menu li.active label:focus {
+    background-color: #b8b8ff;
+}
+.dropdown-toggle::after{
+    display: none;
 }
 @media (max-width: 400px){
     .most-viewed .info-list ul {

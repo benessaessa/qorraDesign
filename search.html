@@ -161,11 +161,31 @@
           </div>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-4">
-          <div class="form-group form-select">
+          <!-- <div class="form-group form-select">
             <select class="form-control px-2" name="">
               <option>الموقع</option>
               <option>edit</option>
             </select>
+          </div> -->
+          <div class="multiselect mb-3">
+            <div class="selectBox" onclick="showCheckboxes()">
+              <select class="form-control">
+                <option>الموقع</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes" class="pt-2">
+              <label for="one">
+                <input type="checkbox" id="one" />مدينتي</label>
+              <label for="two">
+                <input type="checkbox" id="two" />هليوبليس</label>
+              <label for="three">
+                <input type="checkbox" id="three" />التجمع الخامس</label>
+              <label for="foure">
+                <input type="checkbox" id="foure" /> الشيخ زايد </label>
+              <label for="five">
+                <input type="checkbox" id="five" /> القطاميه </label>
+            </div>
           </div>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-4 pb-3">
@@ -413,8 +433,41 @@
           </button>
         </div>
         <div class="col-lg-3 col-md-4">
-          <button class="btn -bg-white font-weight-bold border-0 pt-0 txtTrteeb">ترتيب حسب الأحدث <img
-              src="assets/imgs/sort.PNG" alt=""></button>
+          
+          <div class="dropdown">
+            <button class="btn -bg-white font-weight-bold border-0 pt-0 txtTrteeb dropdown-toggle" 
+            id="dropdownMenu1" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="true">
+              ترتيب حسب الأحدث 
+              <img src="assets/imgs/sort.PNG" alt="">
+            </button>
+            <ul class="dropdown-menu checkbox-menu allow-focus" aria-labelledby="dropdownMenu1">
+            
+              <li >
+                <label>
+                  <input type="checkbox"> الاحدث
+                </label>
+              </li>
+              
+              <li >
+                <label>
+                  <input type="checkbox"> الاقدم
+                </label>
+              </li>
+              
+              <li >
+                <label>
+                  <input type="checkbox"> الاقل سعر
+                </label>
+              </li>
+
+              <li >
+                <label>
+                  <input type="checkbox"> الاعلي سعر
+                </label>
+              </li>
+              
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -1012,6 +1065,25 @@
         label: labels[labelIndex++ % labels.length],
         map: map,
       });
+    }
+    $(".checkbox-menu").on("change", "input[type='checkbox']", function() {
+        $(this).closest("li").toggleClass("active", this.checked);
+        });
+
+        $(document).on('click', '.allow-focus', function (e) {
+        e.stopPropagation();
+    });
+    var expanded = false;
+
+    function showCheckboxes() {
+      var checkboxes = document.getElementById("checkboxes");
+      if (!expanded) {
+        checkboxes.style.display = "block";
+        expanded = true;
+      } else {
+        checkboxes.style.display = "none";
+        expanded = false;
+      }
     }
   </script>
 </body>
