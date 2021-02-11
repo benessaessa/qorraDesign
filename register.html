@@ -17,7 +17,7 @@
 
 <body dir="rtl">
   <header>
-    <div class="nav-container">
+    <div class="nav-container nav-fixed">
       <div class="burger">
         <div class="burger__patty"></div>
         <div class="burger__patty"></div>
@@ -26,21 +26,41 @@
 
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a href="" class="menu__link">كيف نعمل</a>
+          <li class="menu__item"><a href="search.html" class="menu__link">بحث </a>
+          <li class="menu__item"><a href="#" class="menu__link">كيف نعمل</a>
           </li>
-          <li class="menu__item"><a href="" class="menu__link">الاسئلة الشائعه</a>
+          <li class="menu__item"><a href="#" class="menu__link">الاسئلة الشائعه</a>
           </li>
           <li class="menu__item">
             <a class="nav-link  menu__link d-flex align-items-center" href="#">
-              <img src="assets/imgs/phone-icon.png" class="mx-2" width="32px" height="32px" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="mx-2" width="32" height="32" viewBox="0 0 32 32">
+                <g fill="none" fill-rule="evenodd">
+                  <g>
+                    <g>
+                      <g>
+                        <g transform="translate(-552 -3974) translate(0 3960) translate(431 14) translate(121)">
+                          <rect width="32" height="32" fill="#18191A" opacity=".05" rx="10" />
+                          <g>
+                            <g stroke="#18191A" stroke-linecap="round" stroke-linejoin="round" opacity=".8">
+                              <path
+                                d="M6.894 2.127C7.96 2.335 8.791 3.166 9 4.228M6.894 0c2.227.247 3.986 2 4.236 4.223m-.532 4.244v1.595c0 .3-.125.586-.346.789-.22.202-.517.302-.816.275-1.64-.178-3.215-.737-4.599-1.633-1.287-.816-2.379-1.906-3.197-3.19C.74 4.914.18 3.334.004 1.69-.023 1.394.077 1.1.28.878.48.658.766.532 1.065.532h1.598c.535-.005.991.386 1.066.915.067.51.193 1.012.373 1.494.146.389.053.827-.24 1.122l-.677.676c.76 1.331 1.864 2.434 3.198 3.19l.676-.675c.296-.292.735-.385 1.125-.239.483.18.985.305 1.497.372.536.076.93.54.917 1.08h0z"
+                                transform="translate(7.652 7.652) translate(2.783 2.783) matrix(-1 0 0 1 11.13 0)" />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
               201003453395+
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link  " href="#">حساب جديد</a>
+            <a class="menu__link" href="register.html">حساب جديد</a>
           </li>
           <li class="menu__item">
-            <a class=" menu__link " href="#">تسجيل الدخول</a>
+            <a class=" menu__link" href="login.html">تسجيل الدخول</a>
           </li>
           <div class="dropdown">
             <a class="btn btn-lang  menu__link d-flex align-items-center dropdown-toggle" href="#" role="button"
@@ -55,19 +75,12 @@
 
         </ul>
       </nav>
-
-      <nav class="navbar navbar-expand-lg p-0 container-fluid px-4 fixed-top" id="top-nav">
+      <nav class="navbar navbar-expand-lg p-0 container " id="top-nav">
         <div class="navBrand">
           <a class="navbar-brand" href="index.html">
             <img src="assets/imgs/logo-blue.png" alt="qorraa" width="122px" height="67px" />
           </a>
         </div>
-
-        <!-- <button class="nav-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <span id="nav-icon3"><span></span><span></span><span></span><span></span></span>
-           </button>
-        -->
-
         <div class="collapse navbar-collapse nav-menu " id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -77,13 +90,32 @@
               <a class="nav-link" href="how-work.html">كيف نعمل</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">الاسئلة الشائعه</a>
+              <a class="nav-link" href="faq.html">الاسئلة الشائعه</a>
             </li>
           </ul>
           <ul class="d-flex list-unstyled mb-0">
             <li class="nav-item">
-              <a class="nav-link btn btn-call d-flex align-items-center" href="#">
-                <img src="assets/imgs/phone-icon.png" class="mx-2" width="32px" height="32px" />
+              <a class="nav-link btn btn-call  d-flex align-items-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mx-2" width="32" height="32" viewBox="0 0 32 32">
+                  <g fill="none" fill-rule="evenodd">
+                    <g>
+                      <g>
+                        <g>
+                          <g transform="translate(-552 -3974) translate(0 3960) translate(431 14) translate(121)">
+                            <rect width="32" height="32" fill="#18191A" opacity=".05" rx="10" />
+                            <g>
+                              <g stroke="#18191A" stroke-linecap="round" stroke-linejoin="round" opacity=".8">
+                                <path
+                                  d="M6.894 2.127C7.96 2.335 8.791 3.166 9 4.228M6.894 0c2.227.247 3.986 2 4.236 4.223m-.532 4.244v1.595c0 .3-.125.586-.346.789-.22.202-.517.302-.816.275-1.64-.178-3.215-.737-4.599-1.633-1.287-.816-2.379-1.906-3.197-3.19C.74 4.914.18 3.334.004 1.69-.023 1.394.077 1.1.28.878.48.658.766.532 1.065.532h1.598c.535-.005.991.386 1.066.915.067.51.193 1.012.373 1.494.146.389.053.827-.24 1.122l-.677.676c.76 1.331 1.864 2.434 3.198 3.19l.676-.675c.296-.292.735-.385 1.125-.239.483.18.985.305 1.497.372.536.076.93.54.917 1.08h0z"
+                                  transform="translate(7.652 7.652) translate(2.783 2.783) matrix(-1 0 0 1 11.13 0)" />
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
                 201003453395+
               </a>
             </li>
@@ -111,7 +143,7 @@
 
   <!-- Section login form -->
   <div class="loginSection">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row justify-content-between">
         <div class="col-md-5 text-right mb-4">
           <h1>انضم الينا </h1>

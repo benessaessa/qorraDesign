@@ -2,6 +2,9 @@
     color: white;
     background-color: #4f69ff;
 }
+.nav-fixed{
+    background-color: white;
+}
 .btnLogin:hover{
     color: white;
     background: #3E57E3;
@@ -48,13 +51,13 @@ color: #4f69ff;
     border-radius: 0;
 }
 @media screen and (min-width:700px){
-    .loginSection{
+    /* .loginSection{
         padding-right: 5.5%;
-    }
-    .navbar,.bottomFooter{
+    } */
+    /* .navbar,.bottomFooter{
         padding-left: 5.5% !important;
         padding-right: 5.5% !important;
-    }
+    } */
     .bgWhite{
         background-color: white;
     }
