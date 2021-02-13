@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/css/justselect.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <link rel="stylesheet" href="assets/css/search.css">
   <link rel="stylesheet" href="assets/css/shap.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -292,18 +293,12 @@
             <div class="row">
               <div class="col">
                 <div class="form-group">
-                  <select id="inputState" class="form-control">
-                    <option selected>من</option>
-                    <option>...</option>
-                  </select>
+                  <input placeholder="من" class="form-control" type="text" name="">
                 </div>
               </div>
               <div class="col">
                 <div class="form-group">
-                  <select id="inputState" class="form-control">
-                    <option selected>الي</option>
-                    <option>...</option>
-                  </select>
+                  <input placeholder="إلي" class="form-control" type="text" name="">
                 </div>
               </div>
             </div>
@@ -311,18 +306,12 @@
             <div class="row">
               <div class="col">
                 <div class="form-group">
-                  <select id="inputState" class="form-control">
-                    <option selected>من</option>
-                    <option>...</option>
-                  </select>
+                  <input placeholder="من" class="form-control" type="text" name="">
                 </div>
               </div>
               <div class="col">
                 <div class="form-group">
-                  <select id="inputState" class="form-control">
-                    <option selected>الي</option>
-                    <option>...</option>
-                  </select>
+                  <input placeholder="إلي" class="form-control" type="text" name="">
                 </div>
               </div>
             </div>
@@ -358,11 +347,10 @@
                 aria-label="Recipient's username" aria-describedby="basic-addon2">
             </div>
             <div class="form-group">
-              <label for="years"> عدد سنين التقسيط</label>
-              <select id="years" class="form-control">
-                <option selected> 1 </option>
-                <option>...</option>
-              </select>
+              <div class="form-group">
+                <label for="years"> عدد سنين التقسيط</label>
+                <input id="years" placeholder="10" class="form-control" type="number" name="">
+              </div>
             </div>
             <div class="form-group">
               <label for="numbBaths"> عدد الحمامات </label>
@@ -397,10 +385,7 @@
             </div>
             <div class="form-group">
               <label for="deadTime"> سنة التسليم </label>
-              <select id="deadTime" class="form-control">
-                <option selected> 1 </option>
-                <option>...</option>
-              </select>
+              <input type="text" id="deadTime" class="form-control" name="daterange" value="01/01/2021 - 01/15/2025" />
             </div>
             <div class="form-group">
               <label for="floorN"> الطابق </label>
@@ -501,8 +486,10 @@
             <div class="pr-4 pl-4 alarmBox">
               <div class="info d-flex py-2">
                 <div class="w-100">
-                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية
-                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">
+                    <a href="#" class="text-dark">شقة - القاطمية</a>
+                    <span class="float-left mt-1">
+                      <a href=""><img src="assets/imgs/delete.svg" alt=""></a></span>
                   </p>
                   <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
                 </div>
@@ -513,8 +500,10 @@
             <div class="pr-4 pl-4 alarmBox">
               <div class="info d-flex py-2">
                 <div class="w-100">
-                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية
-                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">
+                    <a href="#" class="text-dark">شقة - القاطمية</a>
+                    <span class="float-left mt-1">
+                      <a href=""><img src="assets/imgs/delete.svg" alt=""></a></span>
                   </p>
                   <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
                 </div>
@@ -525,8 +514,10 @@
             <div class="pr-4 pl-4 alarmBox">
               <div class="info d-flex py-2">
                 <div class="w-100">
-                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية
-                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">
+                    <a href="#" class="text-dark">شقة - القاطمية</a>
+                    <span class="float-left mt-1">
+                      <a href=""><img src="assets/imgs/delete.svg" alt=""></a></span>
                   </p>
                   <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
                 </div>
@@ -537,8 +528,10 @@
             <div class="pr-4 pl-4 alarmBox">
               <div class="info d-flex py-2">
                 <div class="w-100">
-                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية
-                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">
+                    <a href="#" class="text-dark">شقة - القاطمية</a>
+                    <span class="float-left mt-1">
+                      <a href=""><img src="assets/imgs/delete.svg" alt=""></a></span>
                   </p>
                   <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
                 </div>
@@ -549,8 +542,10 @@
             <div class="pr-4 pl-4 alarmBox">
               <div class="info d-flex py-2">
                 <div class="w-100">
-                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية
-                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">
+                    <a href="#" class="text-dark">شقة - القاطمية</a>
+                    <span class="float-left mt-1">
+                      <a href=""><img src="assets/imgs/delete.svg" alt=""></a></span>
                   </p>
                   <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
                 </div>
@@ -561,8 +556,10 @@
             <div class="pr-4 pl-4 alarmBox">
               <div class="info d-flex py-2">
                 <div class="w-100">
-                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">شقة - القاطمية
-                    <span class="float-left"><img src="assets/imgs/delete.svg" alt=""></span>
+                  <p class="font-weight-bold text-right mb-0 mt-2 pb-1">
+                    <a href="#" class="text-dark">شقة - القاطمية</a>
+                    <span class="float-left mt-1">
+                      <a href=""><img src="assets/imgs/delete.svg" alt=""></a></span>
                   </p>
                   <small class="text-right d-block">تقسيط، ١٢٠ متر ، ١٢٠٠ شهريا</small>
                 </div>
@@ -954,6 +951,9 @@
   <script src="assets/js/main.js"></script>
   <script src="https://unpkg.com/flipping@0.5.3/dist/flipping.animationFrame.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="assets/js/shap.js"></script>
   <script>
     (function () {
@@ -1085,6 +1085,16 @@
         expanded = false;
       }
     }
+  </script>
+  <script>
+    // Date picker
+    $(function() {
+      $('input[name="daterange"]').daterangepicker({
+        opens: 'left'
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+      });
+    });
   </script>
 </body>
 
