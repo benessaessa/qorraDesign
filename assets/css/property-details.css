@@ -250,6 +250,7 @@
     background-color: unset;
     border: 0;
     padding-right: 0;
+    display: inline-block;
 }
 .discount{
     background-color: #fddfaa;
@@ -338,6 +339,9 @@
     }
     .planTabs .nav-item .nav-link{
         font-size: 12px;
+    }
+    .planTabs li{
+        display: flex;
     }
 }
 @media screen and (max-width:320px){
