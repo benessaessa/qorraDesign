@@ -11,6 +11,7 @@
 @media screen and (max-width:600px){
     .howSection{
         padding-right: 1rem;
+        padding-top: 6rem;
     }
 }
 @media screen and (min-width:700px){
