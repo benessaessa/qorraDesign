@@ -446,6 +446,9 @@ color: #00aaec;
 .bottomFooter .socialLinks .fa-facebook-square{
 color: #4460a0;
 }
+.compound-info .video-wrapper{
+  width: 100%;
+}
 @media (max-width:1150px){
   .topFooter .btn {
     line-height: 1.8;
