@@ -214,12 +214,15 @@
           </div>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-4">
-          <div class="form-group form-select">
+          <!-- <div class="form-group form-select">
             <select class="form-control px-2" name="">
               <option>القسط الشهري</option>
               <option>1000</option>
               <option>2000</option>
             </select>
+          </div> -->
+          <div class="form-group">
+            <input class="form-control px-2" placeholder="القسط الشهري" type="text" name="">
           </div>
         </div>
         <div class="col-xl-2 col-lg-3 col-md-4">
@@ -385,7 +388,7 @@
             </div>
             <div class="form-group">
               <label for="deadTime"> سنة التسليم </label>
-              <input type="text" id="deadTime" class="form-control" name="daterange" value="01/01/2021 - 01/15/2025" />
+              <input type="month" id="deadTime" name="start" class="form-control"  min="2021-03" value="2021-05"/>
             </div>
             <div class="form-group">
               <label for="floorN"> الطابق </label>
