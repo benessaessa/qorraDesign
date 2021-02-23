@@ -301,6 +301,21 @@
     color: #4f69ff !important;
     border-bottom: 1px solid #3E57E3;
 }
+.shareIcons i{
+    background-color: blue;
+    padding: 0.6rem 0.3rem 0.6rem 0.7rem;
+    width: 2.2rem;
+    border-radius: 50%;
+}
+.shareIcons .fa-facebook{
+    background-color:#3b5999;
+}
+.shareIcons .fa-twitter{
+    background-color:#1ca2f3;
+}
+.shareIcons .fa-instagram{
+    background-color:#c02ca7;
+}
 @media screen and (max-width:780px){
     .newSlider .carousel-item img{
         min-height: 300px;
