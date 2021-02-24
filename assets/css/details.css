@@ -333,6 +333,7 @@
     max-height: 260px;
     height: 260px;
     width: 260px;
+    border-radius: 50%;
     transition: all .2s ease-in-out;
 }
 .samillerProjects ul li:first-child{
